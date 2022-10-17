@@ -1,0 +1,7 @@
+:root {
+  --normal: 1.6rem;
+  --tiny: calc(var(--normal) * 0.125);
+  --mini: calc(var(--normal) * 0.25);
+  --small: calc(var(--normal) * 0.5);
+  --large: calc(var(--normal) * 2);
+}

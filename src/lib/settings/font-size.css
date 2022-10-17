@@ -1,0 +1,6 @@
+:root {
+  --font-normal: 1.6rem;
+  --font-small: calc(var(--font-normal) * 0.9);
+  --font-big: calc(var(--font-small) * 1.2);
+  --font-large: calc(var(--font-normal) * 1.5);
+}
