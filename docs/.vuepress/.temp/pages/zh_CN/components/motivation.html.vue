@@ -5,7 +5,7 @@
 <ul>
 <li>实在没有必要引入一整个庞大的库（或者更为复杂的配置按需引入）。</li>
 <li>原生组件样式不好看。</li>
-<li>自己重新设计组件又<del></del>太懒能力不足。</li>
+<li>自己重新设计组件又<del>太懒</del>能力不足。</li>
 </ul>
 <p>基于此，我想要设计一套基于原生的，不难看的，最简单的组件库。</p>
 <div class="custom-container tip"><p class="custom-container-title">TIP</p>

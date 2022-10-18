@@ -7,4 +7,3 @@ next: false
 ---
 
 # button
-<button>Click me!</button>

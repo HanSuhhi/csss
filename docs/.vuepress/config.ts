@@ -1,8 +1,49 @@
+import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { getDirname, path } from "@vuepress/utils";
-import { defaultTheme, defineUserConfig } from "vuepress";
+import { defaultTheme, defineUserConfig, NavbarConfig, SidebarConfig } from "vuepress";
+import { codeBlockPlugin } from "@yanyu-fe/vuepress-plugin-code-block";
 
 const __dirname = getDirname(import.meta.url);
+
+enum Language {
+  en_US,
+  zh_CN,
+}
+
+type LanguageStruct = [en_US: string, zh_CN: string];
+const definePath = (language: Language): string => (<LanguageStruct>["", "/zh-CN"])[language];
+
+const defineNavBar = (language: Language): NavbarConfig => [
+  {
+    text: (<LanguageStruct>["Guide", "开始"])[language],
+    link: `${definePath(language)}/guide/what-is-csss`,
+  },
+  {
+    text: (<LanguageStruct>["Components", "组件"])[language],
+    link: `${definePath(language)}/components/motivation`,
+  },
+  {
+    text: (<LanguageStruct>["Todo", "待办"])[language],
+    link: `${definePath(language)}/todo/list`,
+  },
+];
+
+const defineSideBar = (language: Language): SidebarConfig => {
+  const key = `${definePath(language)}/components/`;
+  return {
+    [key]: [
+      {
+        text: (<LanguageStruct>["Description", "组件简介"])[language],
+        children: [`${definePath(language)}/components/motivation`, `${definePath(language)}/components/start`],
+      },
+      {
+        text: (<LanguageStruct>["Normal Components", "常用组件"])[language],
+        children: [`${definePath(language)}/components/button/Readme.md`],
+      },
+    ],
+  };
+};
 
 export default defineUserConfig({
   base: "/csss/",
@@ -15,6 +56,8 @@ export default defineUserConfig({
         TodoList: path.resolve(__dirname, "./components/List.vue"),
       },
     }),
+    backToTopPlugin(),
+    codeBlockPlugin(),
   ],
   alias: {
     "@lib": path.resolve(__dirname, "../../dist"),
@@ -40,37 +83,8 @@ export default defineUserConfig({
         home: "/",
         selectLanguageName: "English",
         selectLanguageText: "Languages",
-        navbar: [
-          {
-            text: "Guide",
-            link: "/guide/what-is-csss",
-          },
-          {
-            text: "Components",
-            link: "/components/motivation",
-          },
-          {
-            text: "Todo",
-            link: "/todo/list",
-          },
-        ],
-        sidebar: {
-          "/components/": [
-            {
-              text: "Description",
-              collapsible: true,
-              children: [
-                { text: "Motivation", link: "/components/motivation" },
-                { text: "Start", link: "/components/start" },
-              ],
-            },
-            {
-              text: "Normal Components",
-              collapsible: true,
-              children: [{ text: "Button", link: "/components/button" }],
-            },
-          ],
-        },
+        navbar: defineNavBar(Language.en_US),
+        sidebar: defineSideBar(Language.en_US),
       },
       "/zh-CN/": {
         home: "/zh-CN/",
@@ -78,37 +92,8 @@ export default defineUserConfig({
         selectLanguageText: "选择语言",
         notFound: ["此处的页面失踪了", "或许去其他页面看看？", "明天的天气是晴天吗，嗯？", "该喝水了，多喝热水。"],
         backToHome: "返回首页",
-        navbar: [
-          {
-            text: "开始",
-            link: "/zh-CN/guide/what-is-csss",
-          },
-          {
-            text: "组件",
-            link: "/zh-CN/components/motivation",
-          },
-          {
-            text: "待办",
-            link: "/zh-CN/todo/list",
-          },
-        ],
-        sidebar: {
-          "/zh-CN/components/": [
-            {
-              text: "组件简介",
-              collapsible: true,
-              children: [
-                { text: "初衷", link: "/zh-CN/components/motivation" },
-                { text: "使用", link: "/zh-CN/components/start" },
-              ],
-            },
-            {
-              text: "常用组件",
-              collapsible: true,
-              children: [{ text: "按钮", link: "/zh-CN/components/button" }],
-            },
-          ],
-        },
+        navbar: defineNavBar(Language.zh_CN),
+        sidebar: defineSideBar(Language.zh_CN),
       },
     },
   }),

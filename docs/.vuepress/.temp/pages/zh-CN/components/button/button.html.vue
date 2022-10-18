@@ -8,5 +8,5 @@
 
 
 <script setup>
-import codeBlockDemo1 from "@YANYU_FE_CODE_BLOCK/zh-CN/components/as.vue";
+import codeBlockDemo1 from "@YANYU_FE_CODE_BLOCK/zh-CN/components/button/as.vue";
 </script>

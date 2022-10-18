@@ -1,0 +1,8 @@
+p {
+  --p-font-size: var(--font-normal);
+}
+
+p {
+  margin: .8em 0;
+  font-size: var(--p-font-size);
+}

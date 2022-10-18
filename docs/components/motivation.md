@@ -1,7 +1,8 @@
 ---
-title: Component Description
+title: Motivation
 lang: en-US
 lastUpdated: true
+next: ./start
 ---
 
 # Motivation

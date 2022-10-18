@@ -1,8 +1,9 @@
 :root {
   --main-color: var(--green);
-  --root-size: 16px;
+  --root-size: 10px;
 }
 
 html {
   font-size: var(--root-size);
+  font-family: arial, sans-serif;
 }
