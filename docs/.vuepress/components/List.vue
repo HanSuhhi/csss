@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { todoList } from "./list";
+
+const props = defineProps<{
+  language: 0 | 1;
+}>();
 </script>
 
 <template>
@@ -7,7 +11,7 @@ import { todoList } from "./list";
     <li v-for="todo in todoList" :key="todo.time">
       <span>
         <span v-if="todo.finish">✅</span>
-        {{ todo.item.join(" - ") }}</span
+        {{ todo.item[props.language] }}</span
       >
       <span>{{ todo.time }}</span>
     </li>

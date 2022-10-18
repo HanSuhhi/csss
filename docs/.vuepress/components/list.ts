@@ -17,7 +17,7 @@ export const todoList: TodoList = [
     time: "2022-10-17 11:11",
   },
   {
-    item: ["Build a basic set of css variables", "设置一套基本的css变量"],
+    item: ["Build a basic set of CSS custom properties", "设置一套基本的css变量"],
     finish: false,
     time: "2022-10-17 12:55",
   },

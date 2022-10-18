@@ -7,9 +7,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
@@ -18,11 +17,14 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
+    "@vuepress/client": "2.0.0-beta.51",
+    "@vuepress/plugin-register-components": "2.0.0-beta.51",
+    "@vuepress/utils": "2.0.0-beta.51",
     "happy-dom": "^7.5.12",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
-    "vitepress": "1.0.0-alpha.21",
     "vitest": "^0.24.3",
-    "vue-tsc": "^0.40.4"
+    "vue-tsc": "^0.40.4",
+    "vuepress": "2.0.0-beta.51"
   }
 }
