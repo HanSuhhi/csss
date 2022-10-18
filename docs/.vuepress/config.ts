@@ -16,6 +16,9 @@ export default defineUserConfig({
       },
     }),
   ],
+  alias: {
+    "@lib": path.resolve(__dirname, "../../dist"),
+  },
   locales: {
     "/": {
       lang: "en-US",

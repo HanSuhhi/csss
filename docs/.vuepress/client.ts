@@ -1,4 +1,4 @@
 import { defineClientConfig } from "@vuepress/client";
-import "../../src/lib/main.css";
+import "@lib/style.css";
 
 export default defineClientConfig({});
