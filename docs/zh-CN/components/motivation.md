@@ -1,7 +1,8 @@
 ---
-title: Component Description
+title: 组件库初衷
 lang: zh-CN
 lastUpdated: true
+next: ./start
 ---
 
 # 初衷
