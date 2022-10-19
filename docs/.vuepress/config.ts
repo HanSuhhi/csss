@@ -11,7 +11,7 @@ enum Language {
   zh_CN,
 }
 
-type LanguageStruct = [en_US: string, zh_CN: string];
+export type LanguageStruct = [en_US: string, zh_CN: string];
 const definePath = (language: Language): string => (<LanguageStruct>["", "/zh-CN"])[language];
 
 const defineNavBar = (language: Language): NavbarConfig => [
@@ -53,7 +53,7 @@ export default defineUserConfig({
   plugins: [
     registerComponentsPlugin({
       components: {
-        TodoList: path.resolve(__dirname, "./components/List.vue"),
+        TodoList: path.resolve(__dirname, "./components/TodoList.vue"),
       },
     }),
     backToTopPlugin(),
