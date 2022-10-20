@@ -1,32 +1,40 @@
-
 :root {
+  /* white */
   --white: #fafafa;
   --white-deep-1: #efefef;
 
+  /* green */
   --green: #a1d685;
   --green-deep-1: #8bc96a;
   --green-deep-2: #79bf54;
 
+  /* red */
   --red: #ef3f36;
   --red-deep-1: #de3027;
   --red-deep-2: #cf1d14;
 
+  /* yellow */
   --yellow: #f0c239;
   --yellow-deep-1: #ddb029;
   --yellow-deep-2: #d1a113;
 
+  /* purlple */
   --purple: rgb(154 123 168);
 
+  /* brown */
   --brown: #756442;
 
+  /* blue  */
   --blue: #97e3fe;
   --blue-deep-1: #31ade5;
   --blue-deep-2: rgb(61 161 194);
 
+  /* black */
   --black: rgb(15 15 15);
   --black-bright-1: rgb(31 31 31);
   --black-bright-2: rgb(40 39 39);
 
+  /* gray */
   --gray: #6e6f71;
   --gray-deep-1: #666769;
   --gray-deep-2: #565658;

@@ -1,6 +1,6 @@
-@import "./settings/";
-@import "./default";
-@import "./config.css";
+@import url("./settings/");
+@import url("./default");
+@import url("./config.css");
 
 * {
   margin: 0;

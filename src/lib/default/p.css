@@ -3,6 +3,6 @@ p {
 }
 
 p {
-  margin: .8em 0;
+  margin: 0.8em 0;
   font-size: var(--p-font-size);
 }

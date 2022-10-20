@@ -1,0 +1,100 @@
+button {
+  --button-font-size: var(--font-normal);
+  --button-padding: var(--small) var(--normal);
+  --button-border-radius: var(--mini);
+  --button-hover-bg-color: var(--white-deep-1);
+  --button-active-bg-color: var(--white);
+  --button-font-color: var(--black-bright-2);
+  --button-border-size: var(--particle);
+  --button-transition-time: var(--flash);
+  --button-active-transform-y: var(--tiny);
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/**
+ * @description warning part
+ */
+button[warning],
+button[warning][dark] {
+  --button-hover-bg-color: var(--yellow-deep-1);
+  --button-active-bg-color: var(--yellow-deep-2);
+
+  background-color: var(--yellow);
+  color: var(--white);
+  border: var(--button-border-size) solid var(--yellow);
+}
+
+/**
+ * @description error part
+ */
+button[error],
+button[error][dark] {
+  --button-hover-bg-color: var(--red-deep-1);
+  --button-active-bg-color: var(--red-deep-2);
+
+  background-color: var(--red);
+  color: var(--white);
+  border: var(--button-border-size) solid var(--red);
+}
+
+/**
+ * @description info part
+ */
+button[info],
+button[info][dark] {
+  --button-hover-bg-color: var(--gray-deep-1);
+  --button-active-bg-color: var(--gray-deep-2);
+
+  background-color: var(--gray);
+  color: var(--white);
+  border: var(--button-border-size) solid var(--gray);
+}
+
+/**
+ * @description success part
+ */
+button[success],
+button[success][dark] {
+  --button-hover-bg-color: var(--green-deep-1);
+  --button-active-bg-color: var(--green-deep-2);
+
+  background-color: var(--green);
+  color: var(--white);
+  border: var(--button-border-size) solid var(--green);
+}
+
+/**
+ * @description dark part
+ */
+button[dark] {
+  --button-hover-bg-color: var(--gray-deep-1);
+  --button-active-bg-color: var(--gray-deep-2);
+
+  border: var(--button-border-size) solid var(--white);
+  color: var(--white);
+}
+
+/**
+ * @description base style set here
+ */
+button {
+  background-color: transparent;
+  font-size: var(--button-font-size);
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  transition: transform var(--button-transition-time);
+  color: var(--button-font-color);
+  border: var(--button-border-size) solid var(--black);
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+button:active {
+  background-color: var(--button-active-bg-color);
+  transform: translateY(var(--button-active-transform-y));
+}

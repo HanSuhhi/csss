@@ -1,0 +1,10 @@
+button:disabled {
+  --button-active-transform-y: 0;
+
+  cursor: not-allowed;
+  color: var(--white-deep-1);
+}
+
+button:disabled:hover {
+  background-color: inherit;
+}
