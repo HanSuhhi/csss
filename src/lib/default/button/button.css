@@ -1,100 +1,91 @@
 button {
-  --button-font-size: var(--font-normal);
-  --button-padding: var(--small) var(--normal);
-  --button-border-radius: var(--mini);
-  --button-hover-bg-color: var(--white-deep-1);
-  --button-active-bg-color: var(--white);
-  --button-font-color: var(--black-bright-2);
-  --button-border-size: var(--particle);
-  --button-transition-time: var(--flash);
-  --button-active-transform-y: var(--tiny);
+  --bg-color: transparent;
+  --font-size: var(--font-normal);
+  --border-size: var(--particle);
+  --border-color: var(--black);
+  --border: var(--border-size) solid var(--border-color);
+  --border-radius: var(--mini);
+  --padding: var(--small) var(--normal);
+  --color: var(--black-bright-2);
+  --transition-time: var(--flash);
+  --transform: transform var(--transition-time);
+  --cursor: pointer;
+  --hover-bg-color: var(--white-deep-1);
+  --active-bg-color: var(--white);
+  --active-transform-y: var(--tiny);
+  --disabled-color: var(--gray-bright-2);
+  --disabled-bg-color: var(--white-deep-2);
 
+  /**
+    * @description reset button style
+    */
   border: none;
   outline: none;
-  cursor: pointer;
 }
 
 /**
  * @description warning part
  */
-button[warning],
-button[warning][dark] {
-  --button-hover-bg-color: var(--yellow-deep-1);
-  --button-active-bg-color: var(--yellow-deep-2);
-
-  background-color: var(--yellow);
-  color: var(--white);
-  border: var(--button-border-size) solid var(--yellow);
+button[warning] {
+  --bg-color: var(--yellow);
+  --color: var(--white);
+  --border-color: var(--yellow);
+  --hover-bg-color: var(--yellow-deep-1);
+  --active-bg-color: var(--yellow-deep-2);
 }
 
 /**
  * @description error part
  */
-button[error],
-button[error][dark] {
-  --button-hover-bg-color: var(--red-deep-1);
-  --button-active-bg-color: var(--red-deep-2);
-
-  background-color: var(--red);
-  color: var(--white);
-  border: var(--button-border-size) solid var(--red);
+button[error] {
+  --bg-color: var(--red);
+  --color: var(--white);
+  --border-color: var(--red);
+  --hover-bg-color: var(--red-deep-1);
+  --active-bg-color: var(--red-deep-2);
 }
 
 /**
  * @description info part
  */
-button[info],
-button[info][dark] {
-  --button-hover-bg-color: var(--gray-deep-1);
-  --button-active-bg-color: var(--gray-deep-2);
-
-  background-color: var(--gray);
-  color: var(--white);
-  border: var(--button-border-size) solid var(--gray);
+button[info] {
+  --bg-color: var(--gray);
+  --color: var(--white);
+  --border-color: var(--gray);
+  --hover-bg-color: var(--gray-deep-1);
+  --active-bg-color: var(--gray-deep-2);
 }
 
 /**
  * @description success part
  */
-button[success],
-button[success][dark] {
-  --button-hover-bg-color: var(--green-deep-1);
-  --button-active-bg-color: var(--green-deep-2);
-
-  background-color: var(--green);
-  color: var(--white);
-  border: var(--button-border-size) solid var(--green);
-}
-
-/**
- * @description dark part
- */
-button[dark] {
-  --button-hover-bg-color: var(--gray-deep-1);
-  --button-active-bg-color: var(--gray-deep-2);
-
-  border: var(--button-border-size) solid var(--white);
-  color: var(--white);
+button[success] {
+  --bg-color: var(--green);
+  --color: var(--white);
+  --border-color: var(--green);
+  --hover-bg-color: var(--green-deep-1);
+  --active-bg-color: var(--green-deep-2);
 }
 
 /**
  * @description base style set here
  */
 button {
-  background-color: transparent;
-  font-size: var(--button-font-size);
-  padding: var(--button-padding);
-  border-radius: var(--button-border-radius);
-  transition: transform var(--button-transition-time);
-  color: var(--button-font-color);
-  border: var(--button-border-size) solid var(--black);
+  background-color: var(--bg-color);
+  color: var(--color);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+  padding: var(--padding);
+  transition: var(--transition);
+  cursor: var(--cursor);
 }
 
 button:hover {
-  background-color: var(--button-hover-bg-color);
+  background-color: var(--hover-bg-color);
 }
 
 button:active {
-  background-color: var(--button-active-bg-color);
-  transform: translateY(var(--button-active-transform-y));
+  background-color: var(--active-bg-color);
+  transform: translateY(var(--active-transform-y));
 }

@@ -1,10 +1,32 @@
 button:disabled {
-  --button-active-transform-y: 0;
-
-  cursor: not-allowed;
-  color: var(--white-deep-1);
+  --color: var(--disabled-color);
+  --bg-color: var(--disabled-bg-color);
+  --border-color: var(--bg-color);
+  --active-transform-y: 0;
+  --cursor: not-allowed;
+  --hover-bg-color: var(--bg-color);
+  --active-bg-color: var(--bg-color);
 }
 
-button:disabled:hover {
-  background-color: inherit;
+button[success]:disabled,
+button[error]:disabled,
+button[info]:disabled,
+button[warning]:disabled {
+  --disabled-color: var(--white);
+}
+
+button[success]:disabled {
+  --disabled-bg-color: var(--green-bright-2);
+}
+
+button[error]:disabled {
+  --disabled-bg-color: var(--red-bright-2);
+}
+
+button[info]:disabled {
+  --disabled-bg-color: var(--gray-bright-2);
+}
+
+button[warning]:disabled {
+  --disabled-bg-color: var(--yellow-bright-2);
 }
