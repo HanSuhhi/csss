@@ -49,7 +49,7 @@ export default defineUserConfig({
   base: "/csss/",
   title: "csss",
   description: "A Native CSS Initialization Lib.",
-  head: [["link", { rel: "icon", href: "/css/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/csss/favicon.ico" }]],
   plugins: [
     registerComponentsPlugin({
       components: {

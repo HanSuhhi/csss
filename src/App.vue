@@ -67,4 +67,20 @@
       <button dark>click me!</button>
     </section>
   </article>
+
+  <article>
+    <section>
+      <h2>title</h2>
+      <section>
+        <h1>h1 title</h1>
+        <h1 lowercase>h1 title</h1>
+        <h1 no-block>h1 title</h1>
+      </section>
+      <h2>h1 title</h2>
+      <h3>h1 title</h3>
+      <h4>h1 title</h4>
+      <h5>h1 title</h5>
+      <h6>h1 title</h6>
+    </section>
+  </article>
 </template>

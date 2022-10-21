@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/csss/\",\"lang\":\"en-US\",\"title\":\"csss\",\"description\":\"A Native CSS Initialization Lib.\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/css/favicon.ico\"}]],\"locales\":{\"/\":{\"lang\":\"en-US\",\"title\":\"csss\",\"description\":\"A Native CSS Initialization Lib.\"},\"/zh-CN/\":{\"lang\":\"zh-CN\",\"title\":\"csss\",\"description\":\"一个原生css初始化的库。\"}}}")
+export const siteData = JSON.parse("{\"base\":\"/csss/\",\"lang\":\"en-US\",\"title\":\"csss\",\"description\":\"A Native CSS Initialization Lib.\",\"head\":[[\"link\",{\"rel\":\"icon\",\"href\":\"/csss/favicon.ico\"}]],\"locales\":{\"/\":{\"lang\":\"en-US\",\"title\":\"csss\",\"description\":\"A Native CSS Initialization Lib.\"},\"/zh-CN/\":{\"lang\":\"zh-CN\",\"title\":\"csss\",\"description\":\"一个原生css初始化的库。\"}}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

@@ -3,7 +3,7 @@ title: 按钮
 lang: zh-CN
 lastUpdated: true
 next: false
-prev: ./start
+prev: ../start
 ---
 
 # Button

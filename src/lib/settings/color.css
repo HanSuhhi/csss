@@ -57,3 +57,25 @@
   --orange-deep-1: #ec7e2a;
   --orange-deep-2: #d3640f;
 }
+
+:root {
+  /* warn */
+  --warning-color: var(--yellow);
+  --warning-color-deep-1: var(--yellow-deep-1);
+  --warning-color-deep-2: var(--yellow-deep-2);
+
+  /* error */
+  --error-color: var(--red);
+  --error-color-deep-1: var(--red-deep-1);
+  --error-color-deep-2: var(--red-deep-2);
+
+  /* success */
+  --success-color: var(--green);
+  --success-color-deep-1: var(--green-deep-1);
+  --success-color-deep-2: var(--green-deep-2);
+
+  /* info */
+  --info-color: var(--gray);
+  --info-color-deep-1: var(--gray-deep-1);
+  --info-color-deep-2: var(--gray-deep-2);
+}

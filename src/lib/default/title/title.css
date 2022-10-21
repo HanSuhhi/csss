@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  --text-transform: capitalize;
+  --font-size: 1rem;
+
+  position: relative;
+  text-transform: var(--text-transform);
+  font-size: var(--font-size);
+  width: fit-content;
+}
+
+h1[lowercase],
+h2[lowercase],
+h3[lowercase],
+h4[lowercase],
+h5[lowercase],
+h6[lowercase] {
+  --text-transform: lowercase;
+}
