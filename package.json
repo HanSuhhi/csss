@@ -10,6 +10,7 @@
     "develop": "pnpm build && pnpm docs:dev",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
+    "docs:deploy": "sh ./scripts/deploy.sh",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "style": "npx stylelint 'src/**/*.css'"

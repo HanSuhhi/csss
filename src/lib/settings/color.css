@@ -26,10 +26,14 @@
   --yellow-bright-2: #f1d789;
 
   /* purlple */
-  --purple: rgb(154 123 168);
+  --purple: #9a7ba8;
+  --purple-deep-1: #856494;
+  --purple-deep-2: #653f77;
 
   /* brown */
   --brown: #756442;
+  --brown-deep-1: #675531;
+  --brown-deep-2: #4c3c1d;
 
   /* blue  */
   --blue: #97e3fe;
@@ -47,4 +51,9 @@
   --gray-deep-2: #565658;
   --gray-bright-1: #75777d;
   --gray-bright-2: #a7a7aa;
+
+  /* orange */
+  --orange: #fa8c35;
+  --orange-deep-1: #ec7e2a;
+  --orange-deep-2: #d3640f;
 }

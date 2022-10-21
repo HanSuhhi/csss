@@ -49,7 +49,7 @@ export default defineUserConfig({
   base: "/csss/",
   title: "csss",
   description: "A Native CSS Initialization Lib.",
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/css/favicon.ico" }]],
   plugins: [
     registerComponentsPlugin({
       components: {
@@ -89,7 +89,7 @@ export default defineUserConfig({
       "/zh-CN/": {
         home: "/zh-CN/",
         selectLanguageName: "简体中文",
-        selectLanguageText: "选择语言",
+        selectLanguageText: "语言",
         notFound: ["此处的页面失踪了", "或许去其他页面看看？", "明天的天气是晴天吗，嗯？", "该喝水了，多喝热水。"],
         backToHome: "返回首页",
         navbar: defineNavBar(Language.zh_CN),

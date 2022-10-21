@@ -25,7 +25,7 @@ export const todoList: TodoList = [
         subs: [
           {
             item: ["Normal style", "普通样式"],
-            finish: false,
+            finish: true,
             time: "2022-10-19 15:43",
           },
           {
@@ -40,17 +40,27 @@ export const todoList: TodoList = [
           },
           {
             item: ["Button size", "按钮尺寸"],
-            finish: false,
+            finish: true,
             time: "2022-10-19 16:21",
           },
           {
+            item: ["Dashed Button", "虚线按钮"],
+            finish: true,
+            time: "2022-10-20 15:59",
+          },
+          {
+            item: ["Secondary Button", "次级按钮"],
+            finish: true,
+            time: "2022-10-20 22:22",
+          },
+          {
             item: ["colorful style", "多色样式"],
-            finish: false,
+            finish: true,
             time: "2022-10-19 16:33",
           },
           {
             item: ["props", "属性汇总"],
-            finish: false,
+            finish: true,
             time: "2022-10-19 21:54",
           },
         ],

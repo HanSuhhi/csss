@@ -3,68 +3,27 @@ button {
   --font-size: var(--font-normal);
   --border-size: var(--particle);
   --border-color: var(--black);
-  --border: var(--border-size) solid var(--border-color);
+  --border-style: solid;
+  --border: var(--border-size) var(--border-style) var(--border-color);
   --border-radius: var(--mini);
-  --padding: var(--small) var(--normal);
+  --padding-y: var(--mini);
+  --padding-x: var(--small);
+  --padding: var(--padding-y) var(--padding-x);
   --color: var(--black-bright-2);
-  --transition-time: var(--flash);
-  --transform: transform var(--transition-time);
+  --transition-time: var(--moment);
   --cursor: pointer;
   --hover-bg-color: var(--white-deep-1);
   --active-bg-color: var(--white);
   --active-transform-y: var(--tiny);
-  --disabled-color: var(--gray-bright-2);
-  --disabled-bg-color: var(--white-deep-2);
+  --active-transform: translateY(var(--active-transform-y));
+  --disabled-opacity: 0.4;
 
   /**
     * @description reset button style
     */
   border: none;
   outline: none;
-}
-
-/**
- * @description warning part
- */
-button[warning] {
-  --bg-color: var(--yellow);
-  --color: var(--white);
-  --border-color: var(--yellow);
-  --hover-bg-color: var(--yellow-deep-1);
-  --active-bg-color: var(--yellow-deep-2);
-}
-
-/**
- * @description error part
- */
-button[error] {
-  --bg-color: var(--red);
-  --color: var(--white);
-  --border-color: var(--red);
-  --hover-bg-color: var(--red-deep-1);
-  --active-bg-color: var(--red-deep-2);
-}
-
-/**
- * @description info part
- */
-button[info] {
-  --bg-color: var(--gray);
-  --color: var(--white);
-  --border-color: var(--gray);
-  --hover-bg-color: var(--gray-deep-1);
-  --active-bg-color: var(--gray-deep-2);
-}
-
-/**
- * @description success part
- */
-button[success] {
-  --bg-color: var(--green);
-  --color: var(--white);
-  --border-color: var(--green);
-  --hover-bg-color: var(--green-deep-1);
-  --active-bg-color: var(--green-deep-2);
+  position: relative;
 }
 
 /**
@@ -77,8 +36,8 @@ button {
   border-radius: var(--border-radius);
   font-size: var(--font-size);
   padding: var(--padding);
-  transition: var(--transition);
   cursor: var(--cursor);
+  transition-duration: var(--transition-time);
 }
 
 button:hover {
@@ -87,5 +46,5 @@ button:hover {
 
 button:active {
   background-color: var(--active-bg-color);
-  transform: translateY(var(--active-transform-y));
+  transform: var(--active-transform);
 }

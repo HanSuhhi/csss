@@ -1,0 +1,28 @@
+button[secondary] {
+  --border-color: var(--gray-bright-2);
+  --color: var(--gray-deep-2);
+}
+
+button[tobe="success"][secondary] {
+  --border-color: var(--green-deep-2);
+  --bg-color: var(--green-bright-2);
+  --color: var(--green-deep-2);
+}
+
+button[tobe="error"][secondary] {
+  --border-color: var(--red-deep-2);
+  --bg-color: var(--red-bright-2);
+  --color: var(--red-deep-2);
+}
+
+button[tobe="warning"][secondary] {
+  --border-color: var(--yellow-deep-2);
+  --bg-color: var(--yellow-bright-2);
+  --color: var(--yellow-deep-2);
+}
+
+button[tobe="info"][secondary] {
+  --border-color: var(--gray-deep-2);
+  --bg-color: var(--gray-bright-2);
+  --color: var(--gray-deep-2);
+}

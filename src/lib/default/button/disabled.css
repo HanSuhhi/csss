@@ -1,32 +1,29 @@
-button:disabled {
-  --color: var(--disabled-color);
-  --bg-color: var(--disabled-bg-color);
-  --border-color: var(--bg-color);
+button:disabled,
+button:disabled[tobe] {
   --active-transform-y: 0;
   --cursor: not-allowed;
   --hover-bg-color: var(--bg-color);
   --active-bg-color: var(--bg-color);
+
+  color: var(--white-deep-2);
 }
 
-button[success]:disabled,
-button[error]:disabled,
-button[info]:disabled,
-button[warning]:disabled {
-  --disabled-color: var(--white);
+button:disabled {
+  --border-color: var(--gray);
+
+  color: var(--gray-bright-2);
 }
 
-button[success]:disabled {
-  --disabled-bg-color: var(--green-bright-2);
-}
-
-button[error]:disabled {
-  --disabled-bg-color: var(--red-bright-2);
-}
-
-button[info]:disabled {
-  --disabled-bg-color: var(--gray-bright-2);
-}
-
-button[warning]:disabled {
-  --disabled-bg-color: var(--yellow-bright-2);
+button:disabled::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: var(--border-size) var(--border-style) white;
+  border-radius: var(--border-radius);
+  opacity: var(--disabled-opacity);
+  filter: brightness(1.2);
+  left: calc(-1 * var(--border-size));
+  top: calc(-1 * var(--border-size));
 }
