@@ -15,7 +15,7 @@ export const defineSideBar = (language: Language): SidebarConfig => {
     [guide_key]: [
       {
         text: (<LanguageStruct>["Start", "开始"])[language],
-        children: [definePath(language, "/guide/this-is-csss"), definePath(language, "/guide/start")],
+        children: [definePath(language, "/guide/what-is-csss"), definePath(language, "/guide/start")],
       },
     ],
     [components_key]: [
@@ -30,7 +30,7 @@ export const defineSideBar = (language: Language): SidebarConfig => {
           {
             text: "标题 title",
             link: definePath(language, "/components/title/"),
-            // children: [definePath(language, "/components/color")],
+            children: [definePath(language, "/components/title/h1.md")],
           },
         ],
       },
