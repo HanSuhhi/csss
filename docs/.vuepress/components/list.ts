@@ -1,4 +1,4 @@
-import type { LanguageStruct } from "../config";
+import { LanguageStruct } from "../configs/nav";
 
 export interface TodoListItem {
   time: string;
@@ -13,6 +13,11 @@ type TodoList = Array<TodoListItem>;
  * @description 项目代办项目
  */
 export const todoList: TodoList = [
+  {
+    item: ["color document", "颜色文档"],
+    finish: false,
+    time: "2022-10-22 13:28",
+  },
   {
     item: ["Design project components", "设计项目组件"],
     finish: false,
@@ -63,6 +68,11 @@ export const todoList: TodoList = [
             finish: true,
             time: "2022-10-19 21:54",
           },
+          {
+            item: ["css properties", "css 变量"],
+            finish: false,
+            time: "2022-10-22 13:22",
+          },
         ],
       },
       {
@@ -79,13 +89,18 @@ export const todoList: TodoList = [
       },
       {
         item: ["h(h1 - h6)", "标题标签(h1 - h6)"],
-        finish: false,
+        finish: true,
         time: "2022-10-21 16:33",
         subs: [
           {
             item: ["capital letters", "首字母大写"],
-            finish: false,
+            finish: true,
             time: "2022-10-21 21:23",
+          },
+          {
+            item: ["center", "居中"],
+            finish: true,
+            time: "2022-10-21 23:18",
           },
         ],
       },
@@ -96,18 +111,62 @@ export const todoList: TodoList = [
         subs: [
           {
             item: ["block crotrol", "阴影块控制"],
-            finish: false,
+            finish: true,
             time: "2022-10-21 22:08",
           },
           {
             item: ["block color", "阴影块颜色"],
-            finish: false,
+            finish: true,
             time: "2022-10-21 22:11",
           },
           {
-            item: ["sub title", "子标题"],
-            finish: false,
-            time: "2022-10-21 22:11",
+            item: ["block animation", "阴影块动画"],
+            finish: true,
+            time: "2022-10-22 00:15",
+          },
+        ],
+      },
+      {
+        item: ["h2", "h2"],
+        finish: false,
+        time: "2022-10-21 23:02",
+        subs: [
+          {
+            item: ["block crotrol", "阴影块控制"],
+            finish: true,
+            time: "2022-10-21 23:04",
+          },
+          {
+            item: ["block color", "阴影块颜色"],
+            finish: true,
+            time: "2022-10-21 23:05",
+          },
+          {
+            item: ["block animation", "阴影块动画"],
+            finish: true,
+            time: "2022-10-22 00:17",
+          },
+        ],
+      },
+      {
+        item: ["h3", "h3"],
+        finish: true,
+        time: "2022-10-21 23:02",
+        subs: [
+          {
+            item: ["block crotrol", "阴影块控制"],
+            finish: true,
+            time: "2022-10-22 00:16",
+          },
+          {
+            item: ["block color", "阴影块颜色"],
+            finish: true,
+            time: "2022-10-22 00:17",
+          },
+          {
+            item: ["block animation", "阴影块动画"],
+            finish: true,
+            time: "2022-10-22 00:18",
           },
         ],
       },

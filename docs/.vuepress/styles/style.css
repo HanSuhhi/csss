@@ -1,0 +1,16 @@
+:root {
+  --root-size: 10px;
+  --c-brand: var(--main-color-deep-1) !important;
+  --c-brand-light: var(--main-color) !important;
+  --c-tip: var(--main-color-deep-2) !important;
+}
+
+.theme-default-content h1,
+.theme-default-content h2,
+.theme-default-content h3,
+.theme-default-content h4,
+.theme-default-content h5,
+.theme-default-content h6 {
+  margin: 0;
+  padding-top: 0;
+}

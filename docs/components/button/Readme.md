@@ -2,7 +2,7 @@
 title: Button
 lang: en-US
 lastUpdated: true
-prev: ./start
+prev: ../color
 next: false
 ---
 
@@ -11,7 +11,7 @@ next: false
 A necessary component.
 
 :::tip
-When I see a button appear on the screen.It's look like seeing "hello world" printed on the terminal.
+When I see a button appear on the screen.It's look like seeing `hello world` printed on the terminal.
 :::
 
 ## Color Style 🎨
@@ -79,3 +79,64 @@ All attributes about `button` over here.
 | secondary  | secondary button | boolean                                                                                  | `false`  |
 | dashed     | dashed button    | boolean                                                                                  | `false`  |
 | dark       | dark mode        | todo                                                                                     |          |
+
+## CSS Custom properties
+
+All css custom properties about `button` are displayed here.
+
+Beacuse of too many properties, `modifiable properties` and `unmodifiable properties` are sorted out.
+
+:::tip
+Modifing css custom properties does not seem like a good idea.If there are any properties that you need but don't provide, issues and PR are welcome 👏
+:::
+
+### Modifiable Properties
+
+Modifiable Properties include `normal style`, `hover style`, `active style`,`disabled style`.
+
+In most scenes,you only need to modify the css custom properties within the scope of the element instead of in the pseudo-class or pseudo-element.
+
+#### normal style
+
+| properties          | description             | deafault           |
+| ------------------- | ----------------------- | ------------------ |
+| `--bg-color`        | button background color | `transparent`      |
+| `--font-size`       | font size               | `font-normal`      |
+| `--border-size`     | border size             | `--particle`       |
+| `--border-color`    | border color            | `--black`          |
+| `--border-style`    | border style            | `solid`            |
+| `--border-radius`   | border radius           | `--mini`           |
+| `--padding-y`       | vertical padding        | `--mini`           |
+| `--padding-x`       | horizontal padding      | `--small`          |
+| `--color`           | font color              | `--black-bright-2` |
+| `--transition-time` | animation time          | `--moment`         |
+| `--cursor`          | cursor style            | pointer            |
+
+#### hover style
+
+| properties         | description                 | deafault       |
+| ------------------ | --------------------------- | -------------- |
+| `--hover-bg-color` | background color when hover | `white-deep-1` |
+
+#### active style
+
+| properties             | description                           | deafault  |
+| ---------------------- | ------------------------------------- | --------- |
+| `--active-bg-color`    | background color when active          | `--white` |
+| `--active-transform-y` | vertical padding distance when active | `--tiny`  |
+
+#### disabled style
+
+| properties           | description           | deafault |
+| -------------------- | --------------------- | -------- |
+| `--disabled-opacity` | opacity when disabled | 0.4      |
+
+---
+
+### Unmodifiable Properties (modification is not recommended)
+
+| properties           | description           | deafault                                                     |
+| -------------------- | --------------------- | ------------------------------------------------------------ |
+| `--border`           | border                | `var(--border-size) var(--border-style) var(--border-color)` |
+| `--padding`          | padding               | `var(--padding-y) var(--padding-x)`                          |
+| `--active-transform` | transform when active | `translateY(var(--active-transform-y))`                      |

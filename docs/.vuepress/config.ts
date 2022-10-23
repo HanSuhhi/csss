@@ -1,18 +1,11 @@
 import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { getDirname, path } from "@vuepress/utils";
-import { defaultTheme, defineUserConfig, NavbarConfig, SidebarConfig } from "vuepress";
+import { defaultTheme, defineUserConfig, NavbarConfig } from "vuepress";
 import { codeBlockPlugin } from "@yanyu-fe/vuepress-plugin-code-block";
+import { Language, LanguageStruct, defineSideBar, definePath } from "./configs/nav";
 
 const __dirname = getDirname(import.meta.url);
-
-enum Language {
-  en_US,
-  zh_CN,
-}
-
-export type LanguageStruct = [en_US: string, zh_CN: string];
-const definePath = (language: Language): string => (<LanguageStruct>["", "/zh-CN"])[language];
 
 const defineNavBar = (language: Language): NavbarConfig => [
   {
@@ -21,29 +14,13 @@ const defineNavBar = (language: Language): NavbarConfig => [
   },
   {
     text: (<LanguageStruct>["Components", "组件"])[language],
-    link: `${definePath(language)}/components/motivation`,
+    link: `${definePath(language)}/components/color`,
   },
   {
     text: (<LanguageStruct>["Todo", "待办"])[language],
     link: `${definePath(language)}/todo/list`,
   },
 ];
-
-const defineSideBar = (language: Language): SidebarConfig => {
-  const key = `${definePath(language)}/components/`;
-  return {
-    [key]: [
-      {
-        text: (<LanguageStruct>["Description", "组件简介"])[language],
-        children: [`${definePath(language)}/components/motivation`, `${definePath(language)}/components/start`],
-      },
-      {
-        text: (<LanguageStruct>["Normal Components", "常用组件"])[language],
-        children: [`${definePath(language)}/components/button/Readme.md`],
-      },
-    ],
-  };
-};
 
 export default defineUserConfig({
   base: "/csss/",

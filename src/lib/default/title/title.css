@@ -8,9 +8,19 @@ h6 {
   --font-size: 1rem;
 
   position: relative;
+  width: fit-content;
   text-transform: var(--text-transform);
   font-size: var(--font-size);
-  width: fit-content;
+  transition: transform 1s;
+}
+
+h1[center],
+h2[center],
+h3[center],
+h4[center],
+h5[center],
+h6[center] {
+  margin: auto;
 }
 
 h1[lowercase],

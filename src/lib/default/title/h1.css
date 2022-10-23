@@ -1,9 +1,22 @@
 h1 {
   --font-size: 4rem;
-  --block-height: calc(var(--font-size) * 0.3);
+  --block-height: calc(var(--font-size) * 0.13);
   --block-width: 70%;
-  --block-radius: var(--normal);
+  --block-radius: var(--mini);
   --block-bg-color: var(--main-color);
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  animation: h1-block var(--second);
+  height: var(--block-height);
+  width: var(--block-width);
+  left: calc((100% - var(--block-width)) / 2);
+  border-bottom-left-radius: var(--block-radius);
+  border-bottom-right-radius: var(--block-radius);
+  bottom: calc(var(--block-height) * 0.3);
+  background-color: var(--block-bg-color);
 }
 
 h1[no-block]::before {
@@ -11,14 +24,29 @@ h1[no-block]::before {
   display: none;
 }
 
-h1::before {
-  content: "";
-  position: absolute;
-  height: var(--block-height);
-  width: var(--block-width);
-  left: calc((100% - var(--block-width)) / 2);
-  border-radius: var(--block-radius);
-  bottom: calc(var(--block-height) * 0.3);
+h1[block]::before {
   background-color: var(--block-bg-color);
-  z-index: var(--z-h1-block);
+}
+
+h1[block="error"]::before {
+  background-color: var(--error-color);
+}
+
+h1[block="warning"]::before {
+  background-color: var(--warning-color);
+}
+
+h1[block="success"]::before {
+  background-color: var(--success-color);
+}
+
+h1[block="info"]::before {
+  background-color: var(--info-color);
+}
+
+@keyframes h1-block {
+  from {
+    opacity: 0.3;
+    transform: translateY(-0.8rem);
+  }
 }

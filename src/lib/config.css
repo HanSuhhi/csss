@@ -1,5 +1,9 @@
 :root {
   --main-color: var(--green);
+  --main-color-deep-1: var(--green-deep-1);
+  --main-color-deep-2: var(--green-deep-2);
+  --main-color-bright-1: var(--green-bright-1);
+  --main-color-bright-2: var(--green-bright-2);
   --root-size: 10px;
 }
 

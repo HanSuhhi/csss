@@ -69,18 +69,39 @@
   </article>
 
   <article>
+    <h2>title</h2>
     <section>
-      <h2>title</h2>
-      <section>
-        <h1>h1 title</h1>
-        <h1 lowercase>h1 title</h1>
-        <h1 no-block>h1 title</h1>
-      </section>
-      <h2>h1 title</h2>
-      <h3>h1 title</h3>
-      <h4>h1 title</h4>
-      <h5>h1 title</h5>
-      <h6>h1 title</h6>
+      <h1>h1 title</h1>
+      <h1 center>h1 title</h1>
+      <h1 lowercase>h1 title</h1>
+      <h1 no-block>h1 title</h1>
+      <h1 block="error">h1 title</h1>
+      <h1 block="warning">h1 title</h1>
+      <h1 block="info">h1 title</h1>
+      <h1 block="success">h1 title</h1>
     </section>
+    <section>
+      <h2>h2 title</h2>
+      <h2 center>h2 title</h2>
+      <h2 lowercase>h2 title</h2>
+      <h2 no-block>h2 title</h2>
+      <h2 block="error">h2 title</h2>
+      <h2 block="warning">h2 title</h2>
+      <h2 block="info">h2 title</h2>
+      <h2 block="success">h2 title</h2>
+    </section>
+    <section>
+      <h3>h3 title</h3>
+      <h3 center>h3 title</h3>
+      <h3 lowercase>h3 title</h3>
+      <h3 no-block>h3 title</h3>
+      <h3 block="error">h3 title</h3>
+      <h3 block="warning">h3 title</h3>
+      <h3 block="info">h3 title</h3>
+      <h3 block="success">h3 title</h3>
+    </section>
+    <h4>h1 title</h4>
+    <h5>h1 title</h5>
+    <h6>h1 title</h6>
   </article>
 </template>

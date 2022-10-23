@@ -2,8 +2,7 @@
 title: Start
 lang: en-US
 lastUpdated: true
-prev: ./motivation
-next: ./button
+prev: ../color.md
 ---
 
 # TODO

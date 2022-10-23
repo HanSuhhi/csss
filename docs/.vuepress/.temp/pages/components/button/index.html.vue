@@ -1,7 +1,7 @@
 <template><div><h1 id="button" tabindex="-1"><a class="header-anchor" href="#button" aria-hidden="true">#</a> Button</h1>
 <p>A necessary component.</p>
 <div class="custom-container tip"><p class="custom-container-title">TIP</p>
-<p>When I see a button appear on the screen.It's look like seeing &quot;hello world&quot; printed on the terminal.</p>
+<p>When I see a button appear on the screen.It's look like seeing <code v-pre>hello world</code> printed on the terminal.</p>
 </div>
 <h2 id="color-style-🎨" tabindex="-1"><a class="header-anchor" href="#color-style-🎨" aria-hidden="true">#</a> Color Style 🎨</h2>
 <p>Color Styles are differentiated according to two types of needs: <strong>business</strong> and <strong>colorful</strong></p>
@@ -78,6 +78,166 @@
 <td>dark mode</td>
 <td>todo</td>
 <td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="css-custom-properties" tabindex="-1"><a class="header-anchor" href="#css-custom-properties" aria-hidden="true">#</a> CSS Custom properties</h2>
+<p>All css custom properties about <code v-pre>button</code> are displayed here.</p>
+<p>Beacuse of too many properties, <code v-pre>modifiable properties</code> and <code v-pre>unmodifiable properties</code> are sorted out.</p>
+<div class="custom-container tip"><p class="custom-container-title">TIP</p>
+<p>Modifing css custom properties does not seem like a good idea.If there are any properties that you need but don't provide, issues and PR are welcome 👏</p>
+</div>
+<h3 id="modifiable-properties" tabindex="-1"><a class="header-anchor" href="#modifiable-properties" aria-hidden="true">#</a> Modifiable Properties</h3>
+<p>Modifiable Properties include <code v-pre>normal style</code>, <code v-pre>hover style</code>, <code v-pre>active style</code>,<code v-pre>disabled style</code>.</p>
+<p>In most scenes,you only need to modify the css custom properties within the scope of the element instead of in the pseudo-class or pseudo-element.</p>
+<h4 id="normal-style" tabindex="-1"><a class="header-anchor" href="#normal-style" aria-hidden="true">#</a> normal style</h4>
+<table>
+<thead>
+<tr>
+<th>properties</th>
+<th>description</th>
+<th>deafault</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>--bg-color</code></td>
+<td>button background color</td>
+<td><code v-pre>transparent</code></td>
+</tr>
+<tr>
+<td><code v-pre>--font-size</code></td>
+<td>font size</td>
+<td><code v-pre>font-normal</code></td>
+</tr>
+<tr>
+<td><code v-pre>--border-size</code></td>
+<td>border size</td>
+<td><code v-pre>--particle</code></td>
+</tr>
+<tr>
+<td><code v-pre>--border-color</code></td>
+<td>border color</td>
+<td><code v-pre>--black</code></td>
+</tr>
+<tr>
+<td><code v-pre>--border-style</code></td>
+<td>border style</td>
+<td><code v-pre>solid</code></td>
+</tr>
+<tr>
+<td><code v-pre>--border-radius</code></td>
+<td>border radius</td>
+<td><code v-pre>--mini</code></td>
+</tr>
+<tr>
+<td><code v-pre>--padding-y</code></td>
+<td>vertical padding</td>
+<td><code v-pre>--mini</code></td>
+</tr>
+<tr>
+<td><code v-pre>--padding-x</code></td>
+<td>horizontal padding</td>
+<td><code v-pre>--small</code></td>
+</tr>
+<tr>
+<td><code v-pre>--color</code></td>
+<td>font color</td>
+<td><code v-pre>--black-bright-2</code></td>
+</tr>
+<tr>
+<td><code v-pre>--transition-time</code></td>
+<td>animation time</td>
+<td><code v-pre>--moment</code></td>
+</tr>
+<tr>
+<td><code v-pre>--cursor</code></td>
+<td>cursor style</td>
+<td>pointer</td>
+</tr>
+</tbody>
+</table>
+<h4 id="hover-style" tabindex="-1"><a class="header-anchor" href="#hover-style" aria-hidden="true">#</a> hover style</h4>
+<table>
+<thead>
+<tr>
+<th>properties</th>
+<th>description</th>
+<th>deafault</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>--hover-bg-color</code></td>
+<td>background color when hover</td>
+<td><code v-pre>white-deep-1</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="active-style" tabindex="-1"><a class="header-anchor" href="#active-style" aria-hidden="true">#</a> active style</h4>
+<table>
+<thead>
+<tr>
+<th>properties</th>
+<th>description</th>
+<th>deafault</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>--active-bg-color</code></td>
+<td>background color when active</td>
+<td><code v-pre>--white</code></td>
+</tr>
+<tr>
+<td><code v-pre>--active-transform-y</code></td>
+<td>vertical padding distance when active</td>
+<td><code v-pre>--tiny</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="disabled-style" tabindex="-1"><a class="header-anchor" href="#disabled-style" aria-hidden="true">#</a> disabled style</h4>
+<table>
+<thead>
+<tr>
+<th>properties</th>
+<th>description</th>
+<th>deafault</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>--disabled-opacity</code></td>
+<td>opacity when disabled</td>
+<td>0.4</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="unmodifiable-properties-modification-is-not-recommended" tabindex="-1"><a class="header-anchor" href="#unmodifiable-properties-modification-is-not-recommended" aria-hidden="true">#</a> Unmodifiable Properties (modification is not recommended)</h3>
+<table>
+<thead>
+<tr>
+<th>properties</th>
+<th>description</th>
+<th>deafault</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code v-pre>--border</code></td>
+<td>border</td>
+<td><code v-pre>var(--border-size) var(--border-style) var(--border-color)</code></td>
+</tr>
+<tr>
+<td><code v-pre>--padding</code></td>
+<td>padding</td>
+<td><code v-pre>var(--padding-y) var(--padding-x)</code></td>
+</tr>
+<tr>
+<td><code v-pre>--active-transform</code></td>
+<td>transform when active</td>
+<td><code v-pre>translateY(var(--active-transform-y))</code></td>
 </tr>
 </tbody>
 </table>
