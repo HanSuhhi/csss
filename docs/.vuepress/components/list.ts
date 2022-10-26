@@ -14,9 +14,26 @@ type TodoList = Array<TodoListItem>;
  */
 export const todoList: TodoList = [
   {
-    item: ["color document", "颜色文档"],
+    item: ["Document", "文档"],
     finish: false,
     time: "2022-10-22 13:28",
+    subs: [
+      {
+        item: ["color", "颜色"],
+        finish: false,
+        time: "2022-10-23 22:19",
+      },
+      {
+        item: ["title", "标题"],
+        finish: false,
+        time: "2022-10-23 22:22",
+      },
+      {
+        item: ["button", "按钮🔧"],
+        finish: false,
+        time: "2022-10-17 12:43",
+      },
+    ],
   },
   {
     item: ["Design project components", "设计项目组件"],

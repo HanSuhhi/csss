@@ -1,0 +1,5 @@
+h5 {
+  --font-size: 2.4rem;
+
+  padding-right: calc(var(--block-width) + 0.8rem);
+}

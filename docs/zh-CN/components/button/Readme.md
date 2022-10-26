@@ -24,13 +24,13 @@ prev: ../color.md
 
 业务颜色样式，会更注重于与其他组件之间的联动。可以通过`tobe`属性进行控制。
 
-<demo src="./ButtonTobe.vue" title="颜色样式" desc="颜色很固定，但是很好用。" />
+<demo src="../../../.vuepress/components/button/ButtonTobe.vue" title="颜色很固定，但是很好用。" />
 
 ### 多彩
 
 多彩颜色样式，则是在单组件中提供更多的颜色选择。可以通过`color`属性进行设置。例如`color="red"`，详细内容可查看[属性汇总](./#属性汇总)
 
-<demo src="./ButtonColor.vue" title="颜色样式" desc="这个世界不是黑的，也不是白的。" />
+<demo src="../../../.vuepress/components/button/ButtonColor.vue" title="这个世界不是黑的，也不是白的。" />
 
 :::warning
 `color`属性生成的颜色样式会覆盖`tobe`属性生成的颜色样式，但仍保留`todo`属性。
@@ -40,25 +40,25 @@ prev: ../color.md
 
 通过`secondary`属性进行控制的次级按钮。
 
-<demo src="./ButtonSecondary.vue" title="次级按钮" desc="次要按钮有时候也是必须的。" />
+<demo src="../../../.vuepress/components/button/ButtonSecondary.vue" title="次要按钮有时候也是必须的。" />
 
 ## 禁用
 
 和 html 标签一致，通过`disabled`属性来禁用按钮。
 
-<demo src="./ButtonDisabled.vue" title="禁用按钮" desc="该装备耐久过低，无法使用。" />
+<demo src="../../../.vuepress/components/button/ButtonDisabled.vue" title="该装备耐久过低，无法使用。" />
 
 ## 尺寸
 
 目前拥有除默认之外的 2 种按钮样式，也许之后会有更多的样式。
 
-<demo src="./ButtonSize.vue" title="按钮尺寸" desc="一个班上总有一些大孩子和小孩子。" />
+<demo src="../../../.vuepress/components/button/ButtonSize.vue" title="一个班上总有一些大孩子和小孩子。" />
 
 ## 虚线按钮
 
 有时候某些场景还会用到一些虚线边框的按钮。也许之后会把他改造成三级按钮。
 
-<demo src="./ButtonDashed.vue" title="虚线按钮" />
+<demo src="../../../.vuepress/components/button/ButtonDashed.vue" />
 
 ## 暗黑模式（TODO）
 
@@ -70,7 +70,7 @@ prev: ../color.md
 
 ## 属性汇总
 
-与`按钮`有关的所有属性将汇总于此。
+与`<button>`有关的所有属性将汇总于此。
 
 | 属性      | 说明     | 可选值                                                                                   | 默认值   |
 | --------- | -------- | ---------------------------------------------------------------------------------------- | -------- |
@@ -84,7 +84,7 @@ prev: ../color.md
 
 ## CSS 变量
 
-与`按钮`有关的所有 CSS 变量将汇总于此。
+与`<button>`有关的所有 CSS 变量将汇总于此。
 
 由于使用到的 CSS 变量过多，整理出`建议修改变量`和`不建议修改变量`。
 
@@ -136,6 +136,8 @@ prev: ../color.md
 ---
 
 ### 不建议修改变量
+
+这里存在的变量不建议修改。
 
 | 变量名               | 说明       | 默认值                                                       |
 | -------------------- | ---------- | ------------------------------------------------------------ |

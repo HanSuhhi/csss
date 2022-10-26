@@ -1,0 +1,56 @@
+h6 {
+  --font-size: 2rem;
+  --block-height: 75%;
+  --block-width: calc(var(--font-size) * 0.15);
+  --block-radius: var(--normal);
+  --block-bg-color: var(--main-color);
+
+  padding-right: calc(var(--block-width) + 0.8rem);
+}
+
+h6::before {
+  content: "";
+  position: absolute;
+  animation: h6-block ease-out var(--second);
+  width: var(--block-width);
+  height: var(--block-height);
+  top: calc((100% - var(--block-height)) / 2);
+  right: 0;
+  border-radius: var(--block-radius);
+  background-color: var(--block-bg-color);
+}
+
+h6[no-block]::before {
+  content: "";
+  display: none;
+}
+
+h6[block]::before {
+  background-color: var(--block-bg-color);
+}
+
+h6[block="error"]::before {
+  background-color: var(--error-color);
+}
+
+h6[block="warning"]::before {
+  background-color: var(--warning-color);
+}
+
+h6[block="success"]::before {
+  background-color: var(--success-color);
+}
+
+h6[block="info"]::before {
+  background-color: var(--info-color);
+}
+
+@keyframes h6-block {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

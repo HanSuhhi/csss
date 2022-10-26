@@ -1,0 +1,9 @@
+<template>
+  <h1 lowercase class="title">《Harry Potter and the Philosopher's Stone》</h1>
+</template>
+
+<style>
+.title {
+  --font-size: var(--font-large)
+}
+</style>

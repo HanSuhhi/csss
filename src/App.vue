@@ -71,7 +71,7 @@
   <article>
     <h2>title</h2>
     <section>
-      <h1>h1 title</h1>
+      <h1 underline>h1 title</h1>
       <h1 center>h1 title</h1>
       <h1 lowercase>h1 title</h1>
       <h1 no-block>h1 title</h1>
@@ -81,7 +81,6 @@
       <h1 block="success">h1 title</h1>
     </section>
     <section>
-      <h2>h2 title</h2>
       <h2 center>h2 title</h2>
       <h2 lowercase>h2 title</h2>
       <h2 no-block>h2 title</h2>
@@ -91,7 +90,6 @@
       <h2 block="success">h2 title</h2>
     </section>
     <section>
-      <h3>h3 title</h3>
       <h3 center>h3 title</h3>
       <h3 lowercase>h3 title</h3>
       <h3 no-block>h3 title</h3>
@@ -100,8 +98,22 @@
       <h3 block="info">h3 title</h3>
       <h3 block="success">h3 title</h3>
     </section>
-    <h4>h1 title</h4>
-    <h5>h1 title</h5>
-    <h6>h1 title</h6>
+    <section>
+      <h4 center>h4 title</h4>
+      <h4 lowercase>h4 title</h4>
+      <h4 no-block>h4 title</h4>
+      <h4 block="error">h4 title</h4>
+      <h4 block="warning">h4 title</h4>
+      <h4 block="info">h4 title</h4>
+      <h4 block="success">h4 title</h4>
+    </section>
+    <section>
+      <h5 center>h5 title</h5>
+      <h5 lowercase>h5 title</h5>
+    </section>
+    <section>
+      <h6 center>h4 title</h6>
+      <h6 lowercase>h4 title</h6>
+    </section>
   </article>
 </template>

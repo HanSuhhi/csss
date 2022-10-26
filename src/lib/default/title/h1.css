@@ -1,5 +1,5 @@
 h1 {
-  --font-size: 4rem;
+  --font-size: 5.4rem;
   --block-height: calc(var(--font-size) * 0.13);
   --block-width: 70%;
   --block-radius: var(--mini);

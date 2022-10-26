@@ -1,5 +1,5 @@
 :root {
-  --root-size: 10px;
+  --root-size: 14px;
   --c-brand: var(--main-color-deep-1) !important;
   --c-brand-light: var(--main-color) !important;
   --c-tip: var(--main-color-deep-2) !important;
@@ -11,6 +11,15 @@
 .theme-default-content h4,
 .theme-default-content h5,
 .theme-default-content h6 {
-  margin: 0;
+  margin-top: initial;
   padding-top: 0;
+}
+
+.theme-default-content h1:first-child,
+.theme-default-content h2:first-child,
+.theme-default-content h3:first-child,
+.theme-default-content h4:first-child,
+.theme-default-content h5:first-child,
+.theme-default-content h6:first-child {
+  margin-bottom: 0;
 }
