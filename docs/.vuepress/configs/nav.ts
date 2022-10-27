@@ -16,7 +16,7 @@ export const defineSideBar = (language: Language): SidebarConfig => {
     [guide_key]: [
       {
         text: (<LanguageStruct>["Start", "开始"])[language],
-        children: [definePath(language, "/guide/what-is-csss"), definePath(language, "/guide/start")],
+        children: [definePath(language, "/guide/what-is-csss")],
       },
     ],
     [components_key]: [
