@@ -3,7 +3,6 @@ export const pagesRoutes = [
   ["v-36c6ae96","/components/color.html",{"title":"Color"},["/components/color","/components/color.md"]],
   ["v-621628ba","/guide/start.html",{"title":"Start"},["/guide/start","/guide/start.md"]],
   ["v-5e979c23","/guide/what-is-csss.html",{"title":"Motivation"},["/guide/what-is-csss","/guide/what-is-csss.md"]],
-  ["v-1a311bab","/todo/list.html",{"title":"TODO"},["/todo/list","/todo/list.md"]],
   ["v-c0c95384","/zh-CN/",{"title":""},["/zh-CN/index.html","/zh-CN/index.md"]],
   ["v-5aeee006","/components/button/",{"title":"<button>"},["/components/button/index.html","/components/button/Readme.md"]],
   ["v-776d4017","/components/title/",{"title":"title"},["/components/title/index.html","/components/title/Readme.md"]],
