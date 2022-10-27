@@ -12,7 +12,7 @@ const defineNavBar = (language: Language): NavbarConfig => [
     link: `${definePath(language)}/guide/what-is-csss`,
   },
   {
-    text: (<LanguageStruct>["Components", "组件"])[language],
+    text: (<LanguageStruct>["Components", "元素"])[language],
     link: `${definePath(language)}/components/color`,
   },
 ];
