@@ -1,5 +1,5 @@
 :root {
-  --root-size: 14px;
+  --root-size: 12px;
   --c-brand: var(--main-color-deep-1) !important;
   --c-brand-light: var(--main-color) !important;
   --c-tip: var(--main-color-deep-2) !important;

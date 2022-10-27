@@ -29,11 +29,11 @@ export const defineSideBar = (language: Language): SidebarConfig => {
         children: [
           definePath(language, "/components/button/Readme.md"),
           {
-            text: (<LanguageStruct>["Title", "标题 title"])[language],
+            text: (<LanguageStruct>["Title", "title 标题"])[language],
             link: definePath(language, "/components/title/"),
             children: ((): string[] => {
               const defineSubPath = (titleLevel: number): string => `/components/title/h${titleLevel}.md`;
-              return range(1, 6).map((titleLevel) => definePath(language, defineSubPath(titleLevel)));
+              return range(1, 7).map((titleLevel) => definePath(language, defineSubPath(titleLevel)));
             })(),
           },
         ],

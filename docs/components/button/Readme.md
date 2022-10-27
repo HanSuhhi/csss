@@ -1,12 +1,12 @@
 ---
-title: Button
+title: <button>
 lang: en-US
 lastUpdated: true
 prev: ../color
 next: false
 ---
 
-# Button
+# \<Button>
 
 A necessary component.
 
@@ -66,7 +66,7 @@ In my schema, dark mode need to be linked with other components.However, other c
 Still need a time.
 :::
 
-## Attributes
+## Attribute Summary
 
 All attributes about `button` over here.
 
@@ -80,14 +80,14 @@ All attributes about `button` over here.
 | dashed     | dashed button    | boolean                                                                                  | `false`  |
 | dark       | dark mode        | todo                                                                                     |          |
 
-## CSS Custom properties
+## CSS Custom Properties
 
-All css custom properties about `button` are displayed here.
+All css custom properties about `<button>` are displayed here.
 
-Beacuse of too many properties, `modifiable properties` and `unmodifiable properties` are sorted out.
+Because of too many properties, `modifiable properties` and `unmodifiable properties` are sorted out.
 
 :::tip
-Modifing css custom properties does not seem like a good idea.If there are any properties that you need but don't provide, issues and PR are welcome 👏
+Modifying css custom properties does not seem like a good idea.If there are any properties that you need but don't provide, issues and PR are welcome 👏
 :::
 
 ### Modifiable Properties
@@ -98,7 +98,7 @@ In most scenes,you only need to modify the css custom properties within the scop
 
 #### normal style
 
-| properties          | description             | deafault           |
+| properties          | description             | default            |
 | ------------------- | ----------------------- | ------------------ |
 | `--bg-color`        | button background color | `transparent`      |
 | `--font-size`       | font size               | `font-normal`      |
@@ -114,30 +114,30 @@ In most scenes,you only need to modify the css custom properties within the scop
 
 #### hover style
 
-| properties         | description                 | deafault       |
+| properties         | description                 | default        |
 | ------------------ | --------------------------- | -------------- |
 | `--hover-bg-color` | background color when hover | `white-deep-1` |
 
 #### active style
 
-| properties             | description                           | deafault  |
+| properties             | description                           | default   |
 | ---------------------- | ------------------------------------- | --------- |
 | `--active-bg-color`    | background color when active          | `--white` |
 | `--active-transform-y` | vertical padding distance when active | `--tiny`  |
 
 #### disabled style
 
-| properties           | description           | deafault |
-| -------------------- | --------------------- | -------- |
-| `--disabled-opacity` | opacity when disabled | 0.4      |
+| properties           | description           | default |
+| -------------------- | --------------------- | ------- |
+| `--disabled-opacity` | opacity when disabled | 0.4     |
 
 ---
 
 ### Unmodifiable Properties
 
-> modification is not recommended
+modification is not recommended
 
-| properties           | description           | deafault                                                     |
+| properties           | description           | default                                                      |
 | -------------------- | --------------------- | ------------------------------------------------------------ |
 | `--border`           | border                | `var(--border-size) var(--border-style) var(--border-color)` |
 | `--padding`          | padding               | `var(--padding-y) var(--padding-x)`                          |

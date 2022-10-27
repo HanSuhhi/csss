@@ -1,5 +1,5 @@
 ---
-title: 标题 title
+title: title 标题
 lang: zh-CN
 lastUpdated: true
 next: ./h1.md
@@ -44,7 +44,7 @@ prev: ../button/Readme.md
 
 ## 居中
 
-标题居中， 应该是一个普通的不能再普通的需求了吧，这仅需要一个`center`属性 😀
+标题居中，应该是一个普通的不能再普通的需求了吧，这仅需要一个`center`属性 😀
 
 <demo src="../../../.vuepress/components/title/H1Center.vue" title="只要居中的文字看起来似乎就很正式。" />
 

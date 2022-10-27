@@ -1,5 +1,5 @@
 ---
-title: 颜色 color
+title: color 颜色
 lang: zh-CN
 lastUpdated: true
 next: ./button/Readme.md

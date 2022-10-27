@@ -1,4 +1,4 @@
-<template><div><h1 id="button" tabindex="-1"><a class="header-anchor" href="#button" aria-hidden="true">#</a> Button</h1>
+<template><div><h1 id="button" tabindex="-1"><a class="header-anchor" href="#button" aria-hidden="true">#</a> &lt;Button&gt;</h1>
 <p>A necessary component.</p>
 <div class="custom-container tip"><p class="custom-container-title">TIP</p>
 <p>When I see a button appear on the screen.It's look like seeing <code v-pre>hello world</code> printed on the terminal.</p>
@@ -25,7 +25,7 @@
 <div class="custom-container tip"><p class="custom-container-title">TIP</p>
 <p>Still need a time.</p>
 </div>
-<h2 id="attributes" tabindex="-1"><a class="header-anchor" href="#attributes" aria-hidden="true">#</a> Attributes</h2>
+<h2 id="attribute-summary" tabindex="-1"><a class="header-anchor" href="#attribute-summary" aria-hidden="true">#</a> Attribute Summary</h2>
 <p>All attributes about <code v-pre>button</code> over here.</p>
 <table>
 <thead>
@@ -81,11 +81,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="css-custom-properties" tabindex="-1"><a class="header-anchor" href="#css-custom-properties" aria-hidden="true">#</a> CSS Custom properties</h2>
-<p>All css custom properties about <code v-pre>button</code> are displayed here.</p>
-<p>Beacuse of too many properties, <code v-pre>modifiable properties</code> and <code v-pre>unmodifiable properties</code> are sorted out.</p>
+<h2 id="css-custom-properties" tabindex="-1"><a class="header-anchor" href="#css-custom-properties" aria-hidden="true">#</a> CSS Custom Properties</h2>
+<p>All css custom properties about <code v-pre>&lt;button&gt;</code> are displayed here.</p>
+<p>Because of too many properties, <code v-pre>modifiable properties</code> and <code v-pre>unmodifiable properties</code> are sorted out.</p>
 <div class="custom-container tip"><p class="custom-container-title">TIP</p>
-<p>Modifing css custom properties does not seem like a good idea.If there are any properties that you need but don't provide, issues and PR are welcome 👏</p>
+<p>Modifying css custom properties does not seem like a good idea.If there are any properties that you need but don't provide, issues and PR are welcome 👏</p>
 </div>
 <h3 id="modifiable-properties" tabindex="-1"><a class="header-anchor" href="#modifiable-properties" aria-hidden="true">#</a> Modifiable Properties</h3>
 <p>Modifiable Properties include <code v-pre>normal style</code>, <code v-pre>hover style</code>, <code v-pre>active style</code>,<code v-pre>disabled style</code>.</p>
@@ -96,7 +96,7 @@
 <tr>
 <th>properties</th>
 <th>description</th>
-<th>deafault</th>
+<th>default</th>
 </tr>
 </thead>
 <tbody>
@@ -163,7 +163,7 @@
 <tr>
 <th>properties</th>
 <th>description</th>
-<th>deafault</th>
+<th>default</th>
 </tr>
 </thead>
 <tbody>
@@ -180,7 +180,7 @@
 <tr>
 <th>properties</th>
 <th>description</th>
-<th>deafault</th>
+<th>default</th>
 </tr>
 </thead>
 <tbody>
@@ -202,7 +202,7 @@
 <tr>
 <th>properties</th>
 <th>description</th>
-<th>deafault</th>
+<th>default</th>
 </tr>
 </thead>
 <tbody>
@@ -215,15 +215,13 @@
 </table>
 <hr>
 <h3 id="unmodifiable-properties" tabindex="-1"><a class="header-anchor" href="#unmodifiable-properties" aria-hidden="true">#</a> Unmodifiable Properties</h3>
-<blockquote>
 <p>modification is not recommended</p>
-</blockquote>
 <table>
 <thead>
 <tr>
 <th>properties</th>
 <th>description</th>
-<th>deafault</th>
+<th>default</th>
 </tr>
 </thead>
 <tbody>

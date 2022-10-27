@@ -1,5 +1,5 @@
 <template>
-  <h1 lowercase class="title">《Harry Potter and the Philosopher's Stone》</h1>
+  <h3 center class="title">《Le Rouge et le Noir》</h3>
 </template>
 
 <style>

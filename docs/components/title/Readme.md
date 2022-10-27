@@ -10,10 +10,10 @@ prev: ../button/Readme.md
 
 Title here is an abbreviation.It is a set of `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`.
 
-It's important to not use more than one `<h1>` in a page.Otherwise, it will feel verr strange, like a piece of data have 2 ids.
+It's important to not use more than one `<h1>` in a page.Otherwise, it will feel very strange, like a piece of data have 2 ids.
 
 ::: tip
-Because of the pafticularity of the `title` (includes 6 elements), here are some public content of title.
+Because of the particularity of the `title` (includes 6 elements), here are some public content of title.
 :::
 
 ## Standard
@@ -22,7 +22,7 @@ I would like to discuss the specification of titles, and the problems caused by 
 
 ### wrong examples
 
-I used to like using `<div>` or `<span>` to render a title througn a custom style.Also, I still like using titles casually.
+I used to like using `<div>` or `<span>` to render a title through a custom style.Also, I still like using titles casually.
 
 - wrong example 1
 
@@ -36,57 +36,55 @@ I used to like using `<div>` or `<span>` to render a title througn a custom styl
 
 From the results, wrong examples look ok.However, for [specification](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Heading_Elements#%E6%97%A0%E9%9A%9C%E7%A2%8D%E9%97%AE%E9%A2%98) or page structure, this is nothing short of a disaster.It will bring these questions:
 
-- Route.
+- Route. For some users(smart devices, special population...), switching between different titles is a normal behavior. If the title is missing or the title level is disordered, it will be very confusing for these users.
+- Directory. Sometimes we need to generate a directory automatically. If you make this mistake, you lose the convenience of automation.
+- Also, if your title levels are confusing, some sensitive users may wonder where the missing title went.
 
-- 导航问题。对于使用标题导航的用户（智能设备，语音设备，障碍人士等）而言，在标题间来回切换是一个司空见惯的行为。如果存在标题缺失或者标题等级错乱的问题，对于使用者而言就会倍感困惑。
-- 目录生成。对于一些自动生成目录的插件或者类似的需求而言，这种错误将导致开发者不得不进行手动调整，从而失去自动化的便捷。
-- 某些时候，如果标题等级错乱，敏感的用户可能会怀疑缺失的标题去哪儿了。
+To avoid these problems, please use titles professionally.
 
-所以，为了避免这些特定场景下会出现的问题，以及更加的专业，请正确的使用标题吧！
+## Center
 
-## 居中
+Centering a title should be an ordinary requirement, and only one `center` attribute is needed to solve this.
 
-标题居中， 应该是一个普通的不能再普通的需求了吧，这仅需要一个`center`属性 😀
+<demo src="../../.vuepress/components/title/H1Center.vue" title="Centered text looks formal." />
 
-<demo src="../../.vuepress/components/title/H1Center.vue" title="只要居中的文字看起来似乎就很正式。" />
+## Lowercase Conversion
 
-## 小写转换
+All title elements can use `lowercase` attribute to use lowercase titles.
 
-所有标题组件，默认通过`text-transform`的属性设置的首字母大写（对于英语而言）。可以通过`lowercase`属性来使用小写标题。
+<demo src="../../.vuepress/components/title/H1Lowercase.vue" title="It's tedious to use js to control string." />
 
-<demo src="../../.vuepress/components/title/H1Lowercase.vue" title="使用 js 来实现对字符的控制确实繁琐。" />
+## Attribute Summary
 
-## 属性汇总
+All attributes about `title` over here.
 
-与`标题`有关的公共属性将汇总于此。组件的特有属性可在对应组件详情中查看。
+| Attributes | Description       | Accepted Values | Default |
+| ---------- | ----------------- | --------------- | ------- |
+| center     | center title      | boolean         | `false` |
+| lowercase  | initial lowercase | boolean         | `false` |
 
-| 属性      | 说明         | 可选值  | 默认值  |
-| --------- | ------------ | ------- | ------- |
-| center    | 标题是否居中 | boolean | `false` |
-| lowercase | 首字母小写   | boolean | `false` |
+## CSS Custom Properties
 
-## CSS 变量
+All css custom properties about `title` are displayed here.
 
-与`标题`有关的公共 CSS 变量将汇总于此。组件的特有 CSS 变量可在对应组件详情中查看。
-
-由于使用到的 CSS 变量过多，整理出`建议修改变量`和`不建议修改变量`。
+Because of too many properties, `modifiable properties` and `unmodifiable properties` are sorted out.
 
 :::tip
-非必要情况下，不建议直接操作 css。如果有未涉及到的 css 变量，欢迎 PR 👏
+Modifying css custom properties does not seem like a good idea.If there are any properties that you need but don't provide, issues and PR are welcome 👏
 :::
 
-### 建议修改变量
+### Modifiable Properties
 
-在大部分应用场景下，仅需在元素的作用域内修改 css 变量即可实现对样式的控制，而不需要在 css 伪类伪元素中进行修改。
+In most scenes,you only need to modify the css custom properties within the scope of the element instead of in the pseudo-class or pseudo-element.
 
-| 变量名        | 说明     | 默认值          |
-| ------------- | -------- | --------------- |
-| `--font-size` | 文字大小 | `--font-normal` |
+| properties    | description | default         |
+| ------------- | ----------- | --------------- |
+| `--font-size` | font size   | `--font-normal` |
 
-### 不建议修改变量
+### Unmodifiable Properties
 
-这里存在的变量不建议修改。
+modification is not recommended
 
-| 变量名             | 说明         | 默认值       |
-| ------------------ | ------------ | ------------ |
-| `--text-transform` | 元素文本操作 | `capitalize` |
+| properties         | description            | default      |
+| ------------------ | ---------------------- | ------------ |
+| `--text-transform` | element text transform | `capitalize` |
