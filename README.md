@@ -1,2 +1,3 @@
-t# csss
-Tool used to initialize page css
+A Native CSS Initialization Lib.
+
+todo
