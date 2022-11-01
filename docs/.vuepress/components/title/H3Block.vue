@@ -1,5 +1,5 @@
 <template>
-  <h3 no-block class="title">《Le Rouge et le Noir》</h3>
+  <h3 data-no-block class="title">《Le Rouge et le Noir》</h3>
 </template>
 
 <style>

@@ -1,5 +1,5 @@
 <template>
-  <h3 lowercase class="title">《Harry Potter and the Philosopher's Stone》</h3>
+  <h3 data-lowercase class="title">《Harry Potter and the Philosopher's Stone》</h3>
 </template>
 
 <style>
