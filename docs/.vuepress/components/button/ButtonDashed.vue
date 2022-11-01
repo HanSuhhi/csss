@@ -1,7 +1,7 @@
 <template>
-  <button dashed>click me!</button>
-  <button tobe="success" secondary dashed>click me!</button>
-  <button tobe="error" secondary dashed>click me!</button>
-  <button tobe="info" secondary dashed>click me!</button>
-  <button tobe="warning" secondary dashed>click me!</button>
+  <button data-dashed>click me!</button>
+  <button data-tobe="success" data-secondary data-dashed>click me!</button>
+  <button data-tobe="error" data-secondary data-dashed>click me!</button>
+  <button data-tobe="info" data-secondary data-dashed>click me!</button>
+  <button data-tobe="warning" data-secondary data-dashed>click me!</button>
 </template>

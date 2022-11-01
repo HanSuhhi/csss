@@ -1,14 +1,14 @@
 /**
  * @description dark part
  */
-button[dark] {
+button[data-dark] {
   --color: var(--white);
   --border-color: var(--white);
   --hover-bg-color: var(--gray-deep-1);
   --active-bg-color: var(--gray-deep-2);
 }
 
-button[warning][dark] {
+button[data-warning][data-dark] {
   --bg-color: var(--yellow);
   --color: var(--white);
   --border-color: var(--yellow);
@@ -16,7 +16,7 @@ button[warning][dark] {
   --active-bg-color: var(--yellow-deep-2);
 }
 
-button[error][dark] {
+button[data-error][data-dark] {
   --bg-color: var(--red);
   --color: var(--white);
   --border-color: var(--red);
@@ -24,7 +24,7 @@ button[error][dark] {
   --active-bg-color: var(--red-deep-2);
 }
 
-button[info][dark] {
+button[data-info][data-dark] {
   --bg-color: var(--gray);
   --color: var(--white);
   --border-color: var(--gray);
@@ -32,7 +32,7 @@ button[info][dark] {
   --active-bg-color: var(--gray-deep-2);
 }
 
-button[success][dark] {
+button[data-success][data-dark] {
   --background-color: var(--green);
   --color: var(--white);
   --border: var(--border-size) solid var(--green);

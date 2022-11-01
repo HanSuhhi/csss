@@ -1,11 +1,11 @@
-button[size="small"] {
+button[data-size="small"] {
   --padding-y: calc(var(--mini) * 0.5);
   --padding-x: calc(var(--small) * 0.8);
 
   font-size: calc(var(--font-size) * 0.7);
 }
 
-button[size="large"] {
+button[data-size="large"] {
   --padding-y: var(--small);
   --padding-x: var(--normal);
 }

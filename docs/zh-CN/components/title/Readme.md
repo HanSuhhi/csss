@@ -44,13 +44,13 @@ prev: ../button/Readme.md
 
 ## 居中
 
-标题居中，应该是一个普通的不能再普通的需求了吧，这仅需要一个`center`属性 😀
+标题居中，应该是一个普通的不能再普通的需求了吧，这仅需要一个`data-center`属性 😀
 
 <demo src="../../../.vuepress/components/title/H1Center.vue" title="只要居中的文字看起来似乎就很正式。" />
 
 ## 小写转换
 
-所有标题元素，默认通过`text-transform`的属性设置的首字母大写（对于英语而言）。可以通过`lowercase`属性来使用小写标题。
+所有标题元素，默认通过`text-transform`的属性设置的首字母大写（对于英语而言）。可以通过`data-lowercase`属性来使用小写标题。
 
 <demo src="../../../.vuepress/components/title/H1Lowercase.vue" title="使用 js 来实现对字符的控制确实繁琐。" />
 

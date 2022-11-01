@@ -21,28 +21,28 @@ h3::before {
   background-color: var(--block-bg-color);
 }
 
-h3[no-block]::before {
+h3[data-no-block]::before {
   content: "";
   display: none;
 }
 
-h3[block]::before {
+h3[data-block]::before {
   background-color: var(--block-bg-color);
 }
 
-h3[block="error"]::before {
+h3[data-block="error"]::before {
   background-color: var(--error-color);
 }
 
-h3[block="warning"]::before {
+h3[data-block="warning"]::before {
   background-color: var(--warning-color);
 }
 
-h3[block="success"]::before {
+h3[data-block="success"]::before {
   background-color: var(--success-color);
 }
 
-h3[block="info"]::before {
+h3[data-block="info"]::before {
   background-color: var(--info-color);
 }
 

@@ -1,5 +1,5 @@
 button:disabled,
-button:disabled[tobe] {
+button:disabled[data-tobe] {
   --active-transform-y: 0;
   --cursor: not-allowed;
   --hover-bg-color: var(--bg-color);

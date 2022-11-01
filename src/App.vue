@@ -8,112 +8,112 @@
     <section>
       <h3>normal buttons</h3>
       <button>click me!</button>
-      <button tobe="success">click me!</button>
-      <button tobe="error">click me!</button>
-      <button tobe="info">click me!</button>
-      <button tobe="warning">click me!</button>
+      <button data-tobe="success">click me!</button>
+      <button data-tobe="error">click me!</button>
+      <button data-tobe="info">click me!</button>
+      <button data-tobe="warning">click me!</button>
     </section>
 
     <section>
       <h3>secondary button</h3>
-      <button secondary>click me!</button>
-      <button secondary tobe="success">click me!</button>
-      <button secondary tobe="error">click me!</button>
-      <button secondary tobe="info">click me!</button>
-      <button secondary tobe="warning">click me!</button>
+      <button data-secondary>click me!</button>
+      <button data-secondary data-tobe="success">click me!</button>
+      <button data-secondary data-tobe="error">click me!</button>
+      <button data-secondary data-tobe="info">click me!</button>
+      <button data-secondary data-tobe="warning">click me!</button>
     </section>
 
     <section>
       <h3>disabled buttons</h3>
       <button disabled>click me!</button>
-      <button tobe="success" disabled>click me!</button>
-      <button tobe="error" disabled>click me!</button>
-      <button tobe="info" disabled>click me!</button>
-      <button tobe="warning" disabled>click me!</button>
+      <button data-tobe="success" disabled>click me!</button>
+      <button data-tobe="error" disabled>click me!</button>
+      <button data-tobe="info" disabled>click me!</button>
+      <button data-tobe="warning" disabled>click me!</button>
     </section>
 
     <section>
       <h3>button size / 3</h3>
-      <button size="small">click me!</button>
+      <button data-size="small">click me!</button>
       <button>click me!</button>
-      <button size="large">click me!</button>
+      <button data-size="large">click me!</button>
     </section>
 
     <section>
       <h3>dashed button</h3>
-      <button dashed>click me!</button>
-      <button tobe="success" secondary dashed>click me!</button>
-      <button tobe="error" secondary dashed>click me!</button>
-      <button tobe="info" secondary dashed>click me!</button>
-      <button tobe="warning" secondary dashed>click me!</button>
+      <button data-dashed>click me!</button>
+      <button data-tobe="success" data-secondary data-dashed>click me!</button>
+      <button data-tobe="error" data-secondary data-dashed>click me!</button>
+      <button data-tobe="info" data-secondary data-dashed>click me!</button>
+      <button data-tobe="warning" data-secondary data-dashed>click me!</button>
     </section>
 
     <section>
       <h3>button color</h3>
-      <button color="white">click me!</button>
-      <button color="green">click me!</button>
-      <button color="red">click me!</button>
-      <button color="purple">click me!</button>
-      <button color="brown">click me!</button>
-      <button color="blue">click me!</button>
-      <button color="black">click me!</button>
-      <button color="gray">click me!</button>
-      <button color="yellow">click me!</button>
-      <button color="orange">click me!</button>
+      <button data-color="white">click me!</button>
+      <button data-color="green">click me!</button>
+      <button data-color="red">click me!</button>
+      <button data-color="purple">click me!</button>
+      <button data-color="brown">click me!</button>
+      <button data-color="blue">click me!</button>
+      <button data-color="black">click me!</button>
+      <button data-color="gray">click me!</button>
+      <button data-color="yellow">click me!</button>
+      <button data-color="orange">click me!</button>
     </section>
 
-    <section dark>
+    <section data-dark>
       <h3>dark button -> todo</h3>
-      <button dark>click me!</button>
+      <button data-dark>click me!</button>
     </section>
   </article>
 
   <article>
     <h2>title</h2>
     <section>
-      <h1 underline>h1 title</h1>
-      <h1 center>h1 title</h1>
-      <h1 lowercase>h1 title</h1>
-      <h1 no-block>h1 title</h1>
-      <h1 block="error">h1 title</h1>
-      <h1 block="warning">h1 title</h1>
-      <h1 block="info">h1 title</h1>
-      <h1 block="success">h1 title</h1>
+      <h1 data-underline>h1 title</h1>
+      <h1 data-center>h1 title</h1>
+      <h1 data-lowercase>h1 title</h1>
+      <h1 data-no-block>h1 title</h1>
+      <h1 data-block="error">h1 title</h1>
+      <h1 data-block="warning">h1 title</h1>
+      <h1 data-block="info">h1 title</h1>
+      <h1 data-block="success">h1 title</h1>
     </section>
     <section>
-      <h2 center>h2 title</h2>
-      <h2 lowercase>h2 title</h2>
-      <h2 no-block>h2 title</h2>
-      <h2 block="error">h2 title</h2>
-      <h2 block="warning">h2 title</h2>
-      <h2 block="info">h2 title</h2>
-      <h2 block="success">h2 title</h2>
+      <h2 data-center>h2 title</h2>
+      <h2 data-lowercase>h2 title</h2>
+      <h2 data-no-block>h2 title</h2>
+      <h2 data-block="error">h2 title</h2>
+      <h2 data-block="warning">h2 title</h2>
+      <h2 data-block="info">h2 title</h2>
+      <h2 data-block="success">h2 title</h2>
     </section>
     <section>
-      <h3 center>h3 title</h3>
-      <h3 lowercase>h3 title</h3>
-      <h3 no-block>h3 title</h3>
-      <h3 block="error">h3 title</h3>
-      <h3 block="warning">h3 title</h3>
-      <h3 block="info">h3 title</h3>
-      <h3 block="success">h3 title</h3>
+      <h3 data-center>h3 title</h3>
+      <h3 data-lowercase>h3 title</h3>
+      <h3 data-no-block>h3 title</h3>
+      <h3 data-block="error">h3 title</h3>
+      <h3 data-block="warning">h3 title</h3>
+      <h3 data-block="info">h3 title</h3>
+      <h3 data-block="success">h3 title</h3>
     </section>
     <section>
-      <h4 center>h4 title</h4>
-      <h4 lowercase>h4 title</h4>
-      <h4 no-block>h4 title</h4>
-      <h4 block="error">h4 title</h4>
-      <h4 block="warning">h4 title</h4>
-      <h4 block="info">h4 title</h4>
-      <h4 block="success">h4 title</h4>
+      <h4 data-center>h4 title</h4>
+      <h4 data-lowercase>h4 title</h4>
+      <h4 data-no-block>h4 title</h4>
+      <h4 data-block="error">h4 title</h4>
+      <h4 data-block="warning">h4 title</h4>
+      <h4 data-block="info">h4 title</h4>
+      <h4 data-block="success">h4 title</h4>
     </section>
     <section>
-      <h5 center>h5 title</h5>
-      <h5 lowercase>h5 title</h5>
+      <h5 data-center>h5 title</h5>
+      <h5 data-lowercase>h5 title</h5>
     </section>
     <section>
-      <h6 center>h4 title</h6>
-      <h6 lowercase>h4 title</h6>
+      <h6 data-center>h4 title</h6>
+      <h6 data-lowercase>h4 title</h6>
     </section>
   </article>
 </template>

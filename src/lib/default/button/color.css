@@ -1,11 +1,11 @@
-button[color="white"] {
+button[data-color="white"] {
   --bg-color: var(--white);
   --border-color: var(--white);
   --hover-bg-color: var(--white-deep-1);
   --active-bg-color: var(--white-deep-2);
 }
 
-button[color="green"] {
+button[data-color="green"] {
   --bg-color: var(--green);
   --color: var(--white);
   --border-color: var(--green);
@@ -13,7 +13,7 @@ button[color="green"] {
   --active-bg-color: var(--green-deep-2);
 }
 
-button[color="red"] {
+button[data-color="red"] {
   --bg-color: var(--red);
   --color: var(--white);
   --border-color: var(--red);
@@ -21,7 +21,7 @@ button[color="red"] {
   --active-bg-color: var(--red-deep-2);
 }
 
-button[color="purple"] {
+button[data-color="purple"] {
   --bg-color: var(--purple);
   --color: var(--white);
   --border-color: var(--purple);
@@ -29,7 +29,7 @@ button[color="purple"] {
   --active-bg-color: var(--purple-deep-2);
 }
 
-button[color="brown"] {
+button[data-color="brown"] {
   --bg-color: var(--brown);
   --color: var(--white);
   --border-color: var(--brown);
@@ -37,7 +37,7 @@ button[color="brown"] {
   --active-bg-color: var(--brown-deep-2);
 }
 
-button[color="blue"] {
+button[data-color="blue"] {
   --bg-color: var(--blue);
   --color: var(--white);
   --border-color: var(--blue);
@@ -45,7 +45,7 @@ button[color="blue"] {
   --active-bg-color: var(--blue-deep-2);
 }
 
-button[color="black"] {
+button[data-color="black"] {
   --bg-color: var(--black);
   --color: var(--white);
   --border-color: var(--black);
@@ -53,7 +53,7 @@ button[color="black"] {
   --active-bg-color: var(--black-deep-2);
 }
 
-button[color="gray"] {
+button[data-color="gray"] {
   --bg-color: var(--gray);
   --color: var(--white);
   --border-color: var(--gray);
@@ -61,7 +61,7 @@ button[color="gray"] {
   --active-bg-color: var(--gray-deep-2);
 }
 
-button[color="yellow"] {
+button[data-color="yellow"] {
   --bg-color: var(--yellow);
   --color: var(--white);
   --border-color: var(--yellow);
@@ -69,7 +69,7 @@ button[color="yellow"] {
   --active-bg-color: var(--yellow-deep-2);
 }
 
-button[color="orange"] {
+button[data-color="orange"] {
   --bg-color: var(--orange);
   --color: var(--white);
   --border-color: var(--orange);
@@ -77,7 +77,7 @@ button[color="orange"] {
   --active-bg-color: var(--orange-deep-2);
 }
 
-button[color="orange"] {
+button[data-color="orange"] {
   --bg-color: var(--orange);
   --color: var(--white);
   --border-color: var(--orange);

@@ -1,27 +1,27 @@
-button[secondary] {
+button[data-secondary] {
   --border-color: var(--gray-bright-2);
   --color: var(--gray-bright-2);
 }
 
-button[tobe="success"][secondary] {
+button[data-tobe="success"][data-secondary] {
   --border-color: var(--green-deep-2);
   --bg-color: var(--green-bright-2);
   --color: var(--white);
 }
 
-button[tobe="error"][secondary] {
+button[data-tobe="error"][data-secondary] {
   --border-color: var(--red-deep-2);
   --bg-color: var(--red-bright-2);
   --color: var(--white);
 }
 
-button[tobe="warning"][secondary] {
+button[data-tobe="warning"][data-secondary] {
   --border-color: var(--yellow-deep-2);
   --bg-color: var(--yellow-bright-2);
   --color: var(--white);
 }
 
-button[tobe="info"][secondary] {
+button[data-tobe="info"][data-secondary] {
   --border-color: var(--gray-deep-2);
   --bg-color: var(--gray-bright-2);
   --color: var(--white);

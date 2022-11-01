@@ -22,23 +22,23 @@ prev: ../color.md
 
 ### 业务
 
-业务颜色样式，会更注重于与其他元素之间的联动。可以通过`tobe`属性进行控制。
+业务颜色样式，会更注重于与其他元素之间的联动。可以通过`data-tobe`属性进行控制。
 
 <demo src="../../../.vuepress/components/button/ButtonTobe.vue" title="颜色很固定，但是很好用。" />
 
 ### 多彩
 
-多彩颜色样式，则是在单元素中提供更多的颜色选择。可以通过`color`属性进行设置。例如`color="red"`，详细内容可查看[属性汇总](./#属性汇总)
+多彩颜色样式，则是在单元素中提供更多的颜色选择。可以通过`data-color`属性进行设置。例如`color="red"`，详细内容可查看[属性汇总](./#属性汇总)
 
 <demo src="../../../.vuepress/components/button/ButtonColor.vue" title="这个世界不是黑的，也不是白的。" />
 
 :::warning
-`color`属性生成的颜色样式会覆盖`tobe`属性生成的颜色样式，但仍保留`todo`属性。
+`data-color`属性生成的颜色样式会覆盖`data-tobe`属性生成的颜色样式，但仍保留`data-tobe`属性。
 :::
 
 ## 次级按钮
 
-通过`secondary`属性进行控制的次级按钮。
+通过`data-secondary`属性进行控制的次级按钮。
 
 <demo src="../../../.vuepress/components/button/ButtonSecondary.vue" title="次要按钮有时候也是必须的。" />
 
@@ -72,15 +72,15 @@ prev: ../color.md
 
 与`<button>`有关的所有属性将汇总于此。
 
-| 属性      | 说明     | 可选值                                                                                   | 默认值   |
-| --------- | -------- | ---------------------------------------------------------------------------------------- | -------- |
-| tobe      | 类型     | `success` / `warning` / `error` / `info`                                                 |          |
-| color     | 颜色     | `white` / `green`/ `red`/ `purple`/ `brown`/ `blue`/ `black`/ `gray`/ `yellow`/ `orange` |          |
-| disabled  | 禁用     | boolean                                                                                  | `false`  |
-| size      | 尺寸     | `small` / `normal` / `large`                                                             | `normal` |
-| secondary | 次级按钮 | boolean                                                                                  | `false`  |
-| dashed    | 虚线按钮 | boolean                                                                                  | `false`  |
-| dark      | 暗黑模式 | todo                                                                                     |          |
+| 属性           | 说明     | 可选值                                                                                   | 默认值   |
+| -------------- | -------- | ---------------------------------------------------------------------------------------- | -------- |
+| data-tobe      | 类型     | `success` / `warning` / `error` / `info`                                                 |          |
+| data-color     | 颜色     | `white` / `green`/ `red`/ `purple`/ `brown`/ `blue`/ `black`/ `gray`/ `yellow`/ `orange` |          |
+| disabled       | 禁用     | boolean                                                                                  | `false`  |
+| data-size      | 尺寸     | `small` / `normal` / `large`                                                             | `normal` |
+| data-secondary | 次级按钮 | boolean                                                                                  | `false`  |
+| data-dashed    | 虚线按钮 | boolean                                                                                  | `false`  |
+| data-dark      | 暗黑模式 | todo                                                                                     |          |
 
 ## CSS 变量
 

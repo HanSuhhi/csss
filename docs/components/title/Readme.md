@@ -44,13 +44,13 @@ To avoid these problems, please use titles professionally.
 
 ## Center
 
-Centering a title should be an ordinary requirement, and only one `center` attribute is needed to solve this.
+Centering a title should be an ordinary requirement, and only one `data-center` attribute is needed to solve this.
 
 <demo src="../../.vuepress/components/title/H1Center.vue" title="Centered text looks formal." />
 
 ## Lowercase Conversion
 
-All title elements can use `lowercase` attribute to use lowercase titles.
+All title elements can use `data-lowercase` attribute to use lowercase titles.
 
 <demo src="../../.vuepress/components/title/H1Lowercase.vue" title="It's tedious to use js to control string." />
 
@@ -58,10 +58,10 @@ All title elements can use `lowercase` attribute to use lowercase titles.
 
 All attributes about `title` over here.
 
-| Attributes | Description       | Accepted Values | Default |
-| ---------- | ----------------- | --------------- | ------- |
-| center     | center title      | boolean         | `false` |
-| lowercase  | initial lowercase | boolean         | `false` |
+| Attributes     | Description       | Accepted Values | Default |
+| -------------- | ----------------- | --------------- | ------- |
+| data-center    | center title      | boolean         | `false` |
+| data-lowercase | initial lowercase | boolean         | `false` |
 
 ## CSS Custom Properties
 

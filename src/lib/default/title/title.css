@@ -13,20 +13,20 @@ h6 {
   font-size: var(--font-size);
 }
 
-h1[center],
-h2[center],
-h3[center],
-h4[center],
-h5[center],
-h6[center] {
+h1[data-center],
+h2[data-center],
+h3[data-center],
+h4[data-center],
+h5[data-center],
+h6[data-center] {
   margin: auto;
 }
 
-h1[lowercase],
-h2[lowercase],
-h3[lowercase],
-h4[lowercase],
-h5[lowercase],
-h6[lowercase] {
+h1[data-lowercase],
+h2[data-lowercase],
+h3[data-lowercase],
+h4[data-lowercase],
+h5[data-lowercase],
+h6[data-lowercase] {
   --text-transform: lowercase;
 }

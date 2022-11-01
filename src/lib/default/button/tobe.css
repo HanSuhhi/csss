@@ -1,7 +1,7 @@
 /**
  * @description warning part
  */
-button[tobe="warning"] {
+button[data-tobe="warning"] {
   --bg-color: var(--warning-color);
   --color: var(--white);
   --border-color: var(--warning-color);
@@ -12,7 +12,7 @@ button[tobe="warning"] {
 /**
  * @description error part
  */
-button[tobe="error"] {
+button[data-tobe="error"] {
   --bg-color: var(--error-color);
   --color: var(--white);
   --border-color: var(--error-color);
@@ -23,7 +23,7 @@ button[tobe="error"] {
 /**
  * @description info part
  */
-button[tobe="info"] {
+button[data-tobe="info"] {
   --bg-color: var(--info-color);
   --color: var(--white);
   --border-color: var(--info-color);
@@ -34,7 +34,7 @@ button[tobe="info"] {
 /**
  * @description success part
  */
-button[tobe="success"] {
+button[data-tobe="success"] {
   --bg-color: var(--success-color);
   --color: var(--white);
   --border-color: var(--success-color);
