@@ -2,8 +2,8 @@
 title: <button> 按钮
 lang: zh-CN
 lastUpdated: true
+prev: ../ul
 next: ../title
-prev: ../color.md
 ---
 
 # Button

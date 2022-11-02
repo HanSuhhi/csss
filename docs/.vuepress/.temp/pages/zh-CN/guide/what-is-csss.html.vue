@@ -58,7 +58,7 @@
 <p><strong>布局元素</strong>，是指仅包含语义化作用，用来展示其他组件元素及内容元素的一类元素，其本身不提供任何展示内容。</p>
 <p>常用布局元素：<code v-pre>&lt;header&gt;</code>、<code v-pre>&lt;aside&gt;</code>、<code v-pre>&lt;footer&gt;</code>等。</p>
 <h4 id="用法" tabindex="-1"><a class="header-anchor" href="#用法" aria-hidden="true">#</a> 用法</h4>
-<p>布局元素的内容应该是各类子元素，而非直接的内容。</p>
+<p>布局元素的内容应该是各类子元素（即组件元素或者是内容元素），而非直接的内容。</p>
 <p>只有当你真的发现，在某处布局时任一的布局元素的语义都不符合现状时，才考虑使用<code v-pre>&lt;div&gt;</code>元素。<code v-pre>&lt;div&gt;</code>是最宽泛的布局元素。</p>
 <div class="custom-container tip"><p class="custom-container-title">正确示例</p>
 <div class="language-html ext-html line-numbers-mode"><pre v-pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span>
@@ -75,7 +75,11 @@
 <li>todo</li>
 </ul>
 <h3 id="组件元素" tabindex="-1"><a class="header-anchor" href="#组件元素" aria-hidden="true">#</a> 组件元素</h3>
-<p>组件元素代表的是一个同时兼备语义及内容的元素，当然</p>
+<p>组件元素代表的是一个同时兼备语义及内容的元素，组件元素将提供更多不同的样式进行选择，使元素更像是行为迥异的组件而非一成不变的元素。</p>
+<h3 id="内容元素" tabindex="-1"><a class="header-anchor" href="#内容元素" aria-hidden="true">#</a> 内容元素</h3>
+<p>内容元素代表的一个包含具体内容的元素，例如<code v-pre>&lt;h1&gt;</code>、<code v-pre>&lt;button&gt;</code>等。一般情况下内容元素内嵌套的仅能为装饰元素。</p>
+<h3 id="装饰元素" tabindex="-1"><a class="header-anchor" href="#装饰元素" aria-hidden="true">#</a> 装饰元素</h3>
+<p>装饰元素多数为行内元素，常见的有<code v-pre>&lt;a&gt;</code>、<code v-pre>&lt;address&gt;</code>等。</p>
 </div></template>
 
 

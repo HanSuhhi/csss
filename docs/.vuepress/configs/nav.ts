@@ -25,6 +25,10 @@ export const defineSideBar = (language: Language): SidebarConfig => {
         children: [definePath(language, "/components/color")],
       },
       {
+        text: (<LanguageStruct>["Component Element", "组件元素"])[language],
+        children: [definePath(language, "/components/ul/Readme.md")],
+      },
+      {
         text: (<LanguageStruct>["Content Element", "内容元素"])[language],
         children: [
           definePath(language, "/components/button/Readme.md"),

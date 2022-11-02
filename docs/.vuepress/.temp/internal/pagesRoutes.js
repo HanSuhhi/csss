@@ -15,7 +15,6 @@ export const pagesRoutes = [
   ["v-a0e50f1e","/zh-CN/components/color.html",{"title":"color 颜色"},["/zh-CN/components/color","/zh-CN/components/color.md"]],
   ["v-7e594984","/zh-CN/guide/what-is-csss.html",{"title":"什么是 csss"},["/zh-CN/guide/what-is-csss","/zh-CN/guide/what-is-csss.md"]],
   ["v-0edbe230","/zh-CN/todo/list.html",{"title":"TODO"},["/zh-CN/todo/list","/zh-CN/todo/list.md"]],
-  ["v-4fb28c02","/zh-CN/components/button/",{"title":"<button> 按钮"},["/zh-CN/components/button/index.html","/zh-CN/components/button/Readme.md"]],
   ["v-1d80b5fe","/zh-CN/components/title/h1.html",{"title":"<h1> 一级标题"},["/zh-CN/components/title/h1","/zh-CN/components/title/h1.md"]],
   ["v-1f358e9d","/zh-CN/components/title/h2.html",{"title":"<h2> 二级标题"},["/zh-CN/components/title/h2","/zh-CN/components/title/h2.md"]],
   ["v-20ea673c","/zh-CN/components/title/h3.html",{"title":"<h3> 三级标题"},["/zh-CN/components/title/h3","/zh-CN/components/title/h3.md"]],
@@ -23,5 +22,7 @@ export const pagesRoutes = [
   ["v-2454187a","/zh-CN/components/title/h5.html",{"title":"<h5> 五级标题"},["/zh-CN/components/title/h5","/zh-CN/components/title/h5.md"]],
   ["v-2608f119","/zh-CN/components/title/h6.html",{"title":"<h6> 六级标题"},["/zh-CN/components/title/h6","/zh-CN/components/title/h6.md"]],
   ["v-b67da11c","/zh-CN/components/title/",{"title":"title 标题"},["/zh-CN/components/title/index.html","/zh-CN/components/title/Readme.md"]],
+  ["v-4fb28c02","/zh-CN/components/button/",{"title":"<button> 按钮"},["/zh-CN/components/button/index.html","/zh-CN/components/button/Readme.md"]],
   ["v-3706649a","/404.html",{"title":""},["/404"]],
+  ["v-7fd8bbbd","/zh-CN/components/ul/",{"title":"<ul> 无序列表"},["/zh-CN/components/ul/index.html","/zh-CN/components/ul/Readme.md"]],
 ]
