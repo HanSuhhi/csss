@@ -1,3 +1,3 @@
-A Native CSS Initialization Lib.
+!Please do not use it on production environment at this time
 
-todo
+A css custom property lib.

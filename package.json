@@ -1,15 +1,12 @@
 {
   "name": "@hansuhhi-don/csss",
-  "version": "0.0.1-0",
+  "version": "0.0.1-beta.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build && rm dist/csss.js",
     "preview": "vite preview",
     "develop": "pnpm build && pnpm docs:dev",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "docs:deploy": "sh ./scripts/deploy.sh",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "stylelint": "stylelint src/**/*.css",
